@@ -1,0 +1,16 @@
+:root {
+	--orange: #d08875;
+	--dark-brown: #433839;
+	--light-brown: #645443;
+	--lighter-brown: #a38c77;
+	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("/assets/Pattern.png");
+	background-repeat: repeat;
+	background-size: 150px;
+	min-height: 200vh;
+}

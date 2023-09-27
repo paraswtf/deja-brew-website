@@ -1,0 +1,56 @@
+nav {
+	top: 0;
+	position: fixed;
+	width: calc(100vw - 100px);
+	height: 150px;
+	display: flex;
+	padding: 0 50px;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.46);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px); /* I hate safari :) [workaround for blur not working in safari - do not remove] */
+}
+
+.navlink {
+	font-size: 26px;
+	font-family: "Dela Gothic One", sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	position: relative;
+	transition: var(--transition);
+	color: var(--light-brown);
+	margin: 0px;
+
+	&:hover {
+		color: var(--dark-brown);
+		outline: 0;
+
+		&:after {
+			width: 100%;
+		}
+
+		& > * {
+			color: var(--light-brown) !important;
+			transition: var(--transition);
+		}
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 1px;
+		position: relative;
+		background-color: var(--dark-brown);
+		transition: var(--transition);
+		opacity: 0.5;
+	}
+}
+
+.navlinks {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}

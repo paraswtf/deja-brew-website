@@ -1,0 +1,31 @@
+.hero {
+	display: flex;
+	margin-top: 100px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 155px;
+}
+
+.herotagline {
+	font-family: "Dela Gothic One", sans-serif;
+	font-size: 75px;
+	margin-left: -285px;
+	text-align: right;
+	color: var(--light-brown);
+	width: 800px;
+}
+
+.heroimage {
+	margin-right: -100%;
+}
+
+.clouds {
+	margin-top: -300px;
+	display: flex;
+	flex-direction: row;
+}
+
+.cloud-left {
+	transform: translate(-50px, -60px);
+}
