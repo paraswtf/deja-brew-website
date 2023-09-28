@@ -1,0 +1,36 @@
+.tweets {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 56px;
+}
+
+.tweetline {
+	margin: 0;
+	margin-bottom: -120px;
+	padding: 0;
+	height: 180px;
+}
+
+.tweetline:nth-child(2),
+.tweetline:nth-child(6) {
+	transform: translate(-340px);
+}
+.tweetline:nth-child(4),
+.tweetline:nth-child(8) {
+	transform: translate(340px);
+}
+
+.tweet:nth-child(1),
+.tweet:nth-child(5) {
+	transform: translate(-150px);
+}
+.tweet:nth-child(3),
+.tweet:nth-child(7) {
+	transform: translate(150px);
+}
+
+.reviews-section {
+	margin-top: 300px;
+}
