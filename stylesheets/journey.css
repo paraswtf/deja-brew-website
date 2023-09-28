@@ -38,7 +38,8 @@
 	width: 510px;
 }
 
-.journeytext-header {
+.journeytext-header,
+h3 {
 	font-family: "Dela Gothic One", sans-serif;
 	font-size: 36px;
 	color: var(--light-brown);
@@ -77,6 +78,7 @@
 	gap: 54px;
 	justify-content: center;
 	margin-top: 100px;
+	margin-bottom: 150px;
 }
 
 .dot {

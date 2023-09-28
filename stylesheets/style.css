@@ -12,6 +12,5 @@ body {
 	background-image: url("/assets/Pattern.png");
 	background-repeat: repeat;
 	background-size: 150px;
-	min-height: 200vh;
 	scroll-behavior: smooth;
 }
