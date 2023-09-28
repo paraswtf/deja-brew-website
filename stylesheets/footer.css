@@ -93,3 +93,18 @@
 	margin-top: 20px;
 	background: var(--light-brown);
 }
+
+.socialicons {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.socialicon {
+	height: 26px;
+}
+
+.footline {
+	height: 300px;
+}
