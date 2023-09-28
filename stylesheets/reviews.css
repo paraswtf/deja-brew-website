@@ -11,6 +11,11 @@
 	margin-bottom: -120px;
 	padding: 0;
 	height: 180px;
+	z-index: -1;
+}
+
+.tweet {
+	z-index: -1;
 }
 
 .tweetline:nth-child(2),
@@ -33,4 +38,11 @@
 
 .reviews-section {
 	margin-top: 300px;
+}
+
+.reviews-para {
+	margin-top: 180px;
+	margin-bottom: 150px;
+	text-align: center;
+	color: var(--almost-black);
 }
