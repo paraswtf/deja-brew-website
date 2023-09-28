@@ -1,8 +1,71 @@
 .footer {
 	display: flex;
+	flex-direction: column;
+	background: var(--dark-brown);
+}
+
+.footer-inner-div {
+	display: flex;
+	flex-direction: row;
 	height: 400px;
 	padding: 0px 58px 0px 36px;
 	justify-content: space-between;
 	align-items: center;
-	background: var(--dark-brown);
+}
+
+.foot-logo {
+	height: 170px;
+}
+
+.foot-link-group-header {
+	margin-left: -8px;
+	color: var(--orange);
+}
+
+.foot-links {
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+}
+
+.foot-link-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: left;
+}
+
+.foot-link {
+	width: fit-content;
+	color: var(--almost-white);
+
+	&:hover {
+		color: var(--twitter-blue);
+
+		& > * {
+			color: var(--almost-white) !important;
+		}
+	}
+
+	&:after {
+		background-color: var(--twitter-blue);
+	}
+}
+
+.footnote {
+	font-family: "David Libre", sans-serif;
+	font-size: 16px;
+	color: var(--almost-white);
+	margin: 0;
+	text-align: center;
+}
+
+.footnote-container {
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: var(--light-brown);
 }
