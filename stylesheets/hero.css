@@ -43,6 +43,12 @@
 	margin-top: -100px;
 }
 
+.arrowlink {
+	display: block;
+	z-index: 2;
+	cursor: pointer;
+}
+
 #upper_arrow {
 	animation: motion 2s infinite ease-in-out;
 }
