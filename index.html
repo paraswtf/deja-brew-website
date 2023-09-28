@@ -6,6 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Deja Brew</title>
 
+        <script>
+            document.onreadystatechange = function () {
+                if (document.readyState !== "complete") {
+                    document.querySelector(
+                        "body").style.visibility = "hidden";
+                    document.querySelector(
+                        "#loader").style.visibility = "visible";
+                } else {
+                    document.querySelector(
+                        "#loader").style.display = "none";
+                    document.querySelector(
+                        "body").style.visibility = "visible";
+                }
+            };
+        </script>
+
         <!-- Meta for browsers, sharing, etc... -->
         <meta name="title" content="Deja Brew">
         <meta name="og:title" content="Deja Brew">
@@ -49,6 +65,16 @@
     </head>
 
     <body>
+        <div id="loader" style="display: flex; height: 100vh; background-color: red;">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, laudantium. Id reiciendis nihil vel
+                consequuntur labore excepturi esse, mollitia dignissimos ullam, molestiae unde reprehenderit impedit
+                amet obcaecati harum dolorem ut voluptas sequi. Aperiam hic optio eligendi? Earum nostrum sint velit
+                error, esse cum ab quas recusandae porro fugiat iusto vitae animi amet voluptatibus maxime molestiae
+                voluptatem labore alias dignissimos debitis ea? Amet magnam non, impedit distinctio odit sequi quibusdam
+                voluptatem corrupti similique error voluptas earum quasi hic dolor praesentium laudantium iste obcaecati
+                ipsa quod veritatis repudiandae mollitia odio. Voluptatibus distinctio blanditiis laboriosam
+                exercitationem temporibus harum ratione, quo cupiditate explicabo deserunt!</h1>
+        </div>
         <nav>
             <a href="/"><img src="/assets/Logo.webp" height="90px" /></a>
             <div class="navlinks">
