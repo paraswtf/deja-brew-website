@@ -19,7 +19,7 @@
 
 /* Font sizes */
 :root {
-	--small-text: 16px;
+	--small-text: 1.4vw;
 	--text: 1.5vw;
 	--smallest-head: 2vw;
 	--small-head: 3vw;

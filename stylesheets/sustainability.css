@@ -1,26 +1,30 @@
 .sustainability-section {
-	margin-top: 300px;
-	margin-bottom: 150px;
+	margin-top: 6vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 700px;
+	width: 60vw;
 	margin-left: auto;
 	margin-right: auto;
-	gap: 56px;
+	gap: 3vw;
 }
 
 .sustainability-para {
-	width: 540px;
+	width: 34vw;
 	text-align: center;
 	color: var(--almost-black);
 }
 
 .sustainability-svg {
-	margin-top: -90%;
+	height: 35vw;
+	margin-top: -35vw;
 	z-index: -1;
 	animation: breathe 5s ease-in-out infinite;
+}
+
+.mug-svg {
+	height: 4vw;
 }
 
 @keyframes breathe {
