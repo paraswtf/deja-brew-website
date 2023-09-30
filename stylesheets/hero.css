@@ -25,17 +25,18 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: -20%;
-	animation: motion 6s infinite ease-in-out;
 	margin-bottom: -8%;
 }
 
 .cloud-left {
 	z-index: -1;
 	width: 50vw;
+	animation: motion 6s infinite ease-in-out;
 }
 
 .cloud-right {
 	width: 50vw;
+	animation: motion 5s infinite ease-in-out;
 }
 
 .arrowcontainer {
