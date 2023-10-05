@@ -1,19 +1,41 @@
+/* This is the main stylesheet for the site. It is used by all pages. */
+
 :root {
+	/* Make vars for other team members to get consistent content */
+
+	/* Colors */
 	--orange: #d08875;
 	--dark-brown: #433839;
 	--light-brown: #645443;
 	--lighter-brown: #a38c77;
 	--almost-black: #1e1e1e;
 	--almost-white: #d9d9d9;
+	--white: #ffffff;
 	--twitter-blue: #009ded;
+
+	/* Animations & Transitions */
 	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	gap: 10vw;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
+}
+
+/* BG class for div backgrounds */
+.light-pattern-bg {
+	background: var(--white);
 	background-image: url("/assets/Pattern.png");
 	background-repeat: repeat;
 	background-size: 150px;
-	scroll-behavior: smooth;
+}
+.dark-pattern-bg {
+	background: var(--dark-brown);
+	background-image: url("/assets/Pattern Dark.png");
+	background-repeat: repeat;
+	background-size: 100px;
 }

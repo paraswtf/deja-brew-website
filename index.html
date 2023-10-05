@@ -48,9 +48,9 @@
         <!-- Icons end-->
     </head>
 
-    <body>
+    <body class="light-pattern-bg">
         <nav>
-            <a href="/"><img src="/assets/Logo.webp" height="90px" /></a>
+            <a href="/"><img src="/assets/Logo.webp" class="navlovo" /></a>
             <ul class="navlinks">
                 <li><a href="/home" class="navlink">Home</a></li>
                 <li><a href="/about" class="navlink">About</a></li>
@@ -59,10 +59,20 @@
         </nav>
         <section id="home">
             <div class="hero">
-                <img src="assets/Hero Image.png" height="730px" width="auto" class="heroimage" />
+                <img src="assets/Hero Image.png" class="heroimage" />
                 <h1 class="herotagline">
-                    <span style="font-size: 85px; color: var(--orange);">COFFEE</span> THAT SPEAKS OF <span
-                        style="font-size: 85px; color: var(--lighter-brown);">HOME</span>
+                    <!-- 15% larger font size in highlighted words using calc -->
+                    <span style="font-size: calc(var(--head) + calc(var(--head) * 0.15)); color: var(--orange);">
+                        COFFEE
+                    </span>
+                    THAT
+                    <br />
+
+                    SPEAKS OF
+
+                    <br />
+                    <span
+                        style="font-size: calc(var(--head) + calc(var(--head) * 0.15)); color: var(--lighter-brown);">HOME</span>
                 </h1>
             </div>
             <div class="arrowcontainer">
@@ -89,8 +99,8 @@
         </section>
         <section id="journey">
             <div class="journeyheader">
-                <h1 class="journey-left">A journey from our fields to your table</h1>
-                <h1 class="journey-right">An experience like none other</h1>
+                <h2 class="journey-left">A journey from our fields to your table</h2>
+                <h2 class="journey-right">An experience like none other</h2>
             </div>
             <div class="journeyinfo">
                 <div class="journeyline">
@@ -105,7 +115,7 @@
                 </div>
                 <div class="journeycards">
                     <div class="journeycard">
-                        <img src="/assets/Imagine A Place.jpeg" class="journeyimage" />
+                        <img src="/assets/Imagine A Place.png" class="journeyimage" />
                         <div class="journeytext">
                             <h3 class="journeytext-header">Imagine a place</h3>
                             <p class="journeytext-para">Rolling hills adorned with emerald green coffee bushes,
@@ -115,7 +125,7 @@
                         </div>
                     </div>
                     <div class="journeycard">
-                        <img src="/assets/Handpicked With Love.jpeg" class="journeyimage" />
+                        <img src="/assets/Handpicked With Love.png" class="journeyimage" />
                         <div class="journeytext">
                             <h3 class="journeytext-header">Handpicked with care</h3>
                             <p class="journeytext-para">Imagine a place where the air is crisp and the sun is warm.
@@ -124,7 +134,7 @@
                         </div>
                     </div>
                     <div class="journeycard">
-                        <img src="/assets/All Natural.jpeg" class="journeyimage" />
+                        <img src="/assets/All Natural.png" class="journeyimage" />
                         <div class="journeytext">
                             <h3 class="journeytext-header">With nature's touch</h3>
                             <p class="journeytext-para">Once harvested, the cherries embark on their transformation.
@@ -136,7 +146,7 @@
                         </div>
                     </div>
                     <div class="journeycard">
-                        <img src="/assets/Carefully Picked.jpeg" class="journeyimage" />
+                        <img src="/assets/Carefully Picked.png" class="journeyimage" />
                         <div class="journeytext">
                             <h3 class="journeytext-header">Carefully crafted</h3>
                             <p class="journeytext-para">At our meticulous mill, the beans undergo a final
@@ -159,7 +169,7 @@
                         </div>
                     </div>
                     <div class="journeycard">
-                        <img src="/assets/Ground Just Right.jpeg" class="journeyimage" />
+                        <img src="/assets/Ground Just Right.png" class="journeyimage" />
                         <div class="journeytext">
                             <h3 class="journeytext-header">Ground just right</h3>
                             <p class="journeytext-para">Precision is key. The grind size is tailored to the brewing
@@ -170,7 +180,7 @@
                         </div>
                     </div>
                     <div class="journeycard">
-                        <img src="/assets/Brewed With Love.jpeg" class="journeyimage" />
+                        <img src="/assets/Brewed With Love.png" class="journeyimage" />
                         <div class="journeytext">
                             <h3 class="journeytext-header">Brewed with love</h3>
                             <p class="journeytext-para">In our world, brewing is an art form. We offer a symphony of
@@ -191,13 +201,14 @@
                     </div>
                 </div>
         </section>
+
         <section id="about" class="about-section">
             <hr />
             <div class="about-text">
-                <h2 align="center">
+                <h2 class="about-head">
                     About us
                 </h2>
-                <p class="journeytext-para about-para" align="center">At Deja Brew, our story begins with a passion for
+                <p class="about-para">At Deja Brew, our story begins with a passion for
                     perfecting
                     the
                     art of brewing.
@@ -208,7 +219,7 @@
             <hr />
         </section>
         <section id="experience" class="experience-section">
-            <h2 align="center">The Deja Brew experience</h2>
+            <h2 class="experience-head">The Deja Brew experience</h2>
             <div class="cards-container">
                 <div class="card">
                     <h4 class="card-header">Exceptional Beans</h4>
@@ -232,16 +243,16 @@
             </div>
         </section>
         <section id="sustainability" class="sustainability-section">
-            <h2 align="center">Our Commitment to Sustainability</h2>
+            <h2 class="sustainability-head">Our Commitment to Sustainability</h2>
             <p class="journeytext-para sustainability-para">We take our responsibility to the planet seriously. From
                 supporting eco-conscious farming practices to minimizing our environmental footprint, sustainability is
                 woven into the fabric of our brand. With every cup, you can sip knowing you're part of a movement
                 towards a greener future.</p>
-            <img src="/assets/coffee-cup-paper.svg" />
+            <img class="mug-svg" src="/assets/coffee-cup-paper.svg" />
             <img class='sustainability-svg' src="/assets/Elipse.svg" />
         </section>
         <section id="reviews" class="reviews-section">
-            <h2 align="center">Look what others have to say</h2>
+            <h2 class="reviews-head">Look what others have to say</h2>
             <div class="tweets">
                 <img class="tweet" src="/assets/Paras-Tweet.svg" />
                 <div class="journeyline tweetline"></div>
@@ -256,7 +267,7 @@
                     style="color: var(--twitter-blue)"><b>@DejaBrewCafe</b></span> on X
                 (formerly Twitter)</p>
         </section>
-        <footer class="footer">
+        <footer class="footer dark-pattern-bg">
             <div class="footer-inner-div">
                 <div class="foot-logo-container">
                     <img class="foot-logo" src="/assets/Logo.png" />

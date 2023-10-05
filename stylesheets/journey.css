@@ -1,62 +1,52 @@
 .journey-left {
-	font-family: "Dela Gothic One", sans-serif;
-	font-size: 54px;
 	color: var(--dark-brown);
 	margin: 0;
 }
 
 .journey-right {
-	font-family: "Dela Gothic One", sans-serif;
-	font-size: 54px;
 	color: var(--lighter-brown);
 	text-align: right;
 	margin: 0;
 }
 
 .journeyheader {
-	margin: -150px 100px 0 80px;
+	margin-left: 6vw;
+	margin-right: 6vw;
 }
 
 .journeyimage {
-	height: 310px;
-	width: 420px;
-	border-radius: 28px;
+	height: 15.5vw;
+	width: 21vw;
+	border-radius: 1.5vw;
 	object-fit: cover;
 }
 
 .journeycard {
 	display: flex;
 	flex-direction: row;
-	gap: 56px;
+	width: 60vw;
+	gap: 3.5vw;
 }
 
 .journeytext {
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
-	margin-top: 16px;
-	width: 510px;
+	gap: 1.5vw;
+	margin-top: 1vw;
 }
 
-.journeytext-header,
-h3 {
-	font-family: "Dela Gothic One", sans-serif;
-	font-size: 36px;
+.journeytext-header {
 	color: var(--light-brown);
-	margin: 0;
 }
 
 .journeytext-para {
-	font-family: "David Libre", sans-serif;
-	font-size: 24px;
 	color: var(--lighter-brown);
-	margin: 0;
 }
 
 .journeycards {
 	display: flex;
 	flex-direction: column;
-	gap: 82px;
+	gap: 6.12vw;
 }
 
 .journeycard:nth-child(even) {
@@ -64,12 +54,12 @@ h3 {
 }
 
 .journeyline {
-	margin-top: 166px;
-	margin-bottom: 166px;
+	margin-top: 7.75vw;
+	margin-bottom: 7.75vw;
 	display: flex;
 	flex-direction: column;
-	border-left: 2px dashed var(--light-brown);
-	gap: 392px;
+	border-left: 0.2vw dashed var(--light-brown);
+	gap: 21.65vw;
 }
 
 .journeyinfo {
@@ -77,16 +67,15 @@ h3 {
 	flex-direction: row;
 	gap: 54px;
 	justify-content: center;
-	margin-top: 100px;
-	margin-bottom: 150px;
+	margin-top: 8vw;
 }
 
 .dot {
-	height: 30px;
-	width: 30px;
+	height: 1.4vw;
+	width: 1.4vw;
 	background-color: var(--lighter-brown);
 	border-radius: 50%;
 	display: inline-block;
-	margin-left: -50%;
+	margin-left: calc(-50% - 1px);
 	margin-top: -100%;
 }

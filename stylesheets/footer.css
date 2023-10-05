@@ -1,10 +1,6 @@
 .footer {
 	display: flex;
 	flex-direction: column;
-	background: var(--dark-brown);
-	background-image: url("/assets/Pattern Dark.png");
-	background-repeat: repeat;
-	background-size: 100px;
 }
 
 .foot-logo-text {
@@ -12,12 +8,12 @@
 }
 
 .foot-logo-subtext {
-	font-size: 16px;
+	font-size: var(--small-text);
 	color: var(--almost-white);
 }
 
 .foot-logo-text-container {
-	margin-left: 60px;
+	margin-left: 6vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -31,25 +27,25 @@
 .footer-inner-div {
 	display: flex;
 	flex-direction: row;
-	height: 400px;
+	height: 30vw;
 	padding: 0px 58px 0px 36px;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .foot-logo {
-	height: 170px;
+	height: 14vw;
 }
 
 .foot-link-group-header {
-	margin-left: -8px;
+	margin-left: -0.4vw;
 	color: var(--orange);
 }
 
 .foot-links {
 	display: flex;
 	flex-direction: row;
-	gap: 60px;
+	gap: 8vw;
 }
 
 .foot-link-group {
@@ -78,33 +74,35 @@
 
 .footnote {
 	font-family: "David Libre", sans-serif;
-	font-size: 16px;
+	font-size: var(--small-text);
 	color: var(--almost-white);
 	margin: 0;
 	text-align: center;
 }
 
 .footnote-container {
-	padding: 16px;
+	padding: 1.8vw;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	gap: 0.8vw;
+	margin-bottom: 1.5vw;
+	margin-top: 1.5vw;
 	background: var(--light-brown);
 }
 
 .socialicons {
-	margin-top: 12px;
+	margin-top: 0.8vw;
 	display: flex;
 	flex-direction: row;
-	gap: 8px;
+	gap: 0.3vw;
 }
 
 .socialicon {
-	height: 26px;
+	height: 2.5vw;
 }
 
 .footline {
-	height: 300px;
+	height: 20vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
 }
