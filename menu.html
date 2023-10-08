@@ -1,3 +1,10 @@
+<!-- 
+    MENU PAGE USING IFRAME FOR DIFFERENT MENUS
+    Credits: 
+        Design By: Paras Deshpande (026)
+        Developed By: Paras Deshpande (026), Aadhya Rastogi (004)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,12 +78,38 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: row;
-                flex-wrap: wrap;
+                flex-direction: column;
                 gap: 1vw;
-                margin-inline: 20vw;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+            }
+
+            .menu-section {
+                display: flex;
+                flex-direction: row;
+                gap: 1vw;
+                margin-inline: 10vw;
+            }
+
+            .iframe-container {
+                display: flex;
+                width: 100%;
             }
         </style>
+
+        <script>
+            function setIframeSrc(src) {
+                console.log(src);
+                document.querySelector(".iframe-container iframe").src = src;
+            }
+        </script>
     </head>
 
     <body class="light-pattern-bg">
@@ -93,30 +126,35 @@
             <img src="/assets/food-icon.svg" alt="food-icon" class="menu-logo">
             <h1 class="menu-head">Our Menu</h1>
         </div>
-        <div class="buttons-group">
-            <div class="button">
-                <img src="/assets/coffee-icon.svg" alt="coffee icon" class="button-icon">
-                <h3 class="button-text">Coffee</h3>
+        <div class="menu-section">
+            <div class="buttons-group">
+                <div class="button" onclick="setIframeSrc('/coffee.html')">
+                    <img src="/assets/coffee-icon.svg" alt="coffee icon" class="button-icon">
+                    <h3 class="button-text">Coffee</h3>
+                </div>
+                <div class="button" onclick="setIframeSrc('/pizzas.html')">
+                    <img src="/assets/pizzas-icon.svg" alt="pizzas icon" class="button-icon">
+                    <h3 class="button-text">Pizzas</h3>
+                </div>
+                <div class="button" onclick="setIframeSrc('/burgers.html')">
+                    <img src="/assets/burgers-icon.svg" alt="burgers icon" class="button-icon">
+                    <h3 class="button-text">Burgers</h3>
+                </div>
+                <div class="button" onclick="setIframeSrc('/snacks.html')">
+                    <img src="/assets/snacks-icon.svg" alt="snacks icon" class="button-icon">
+                    <h3 class="button-text">Snacks</h3>
+                </div>
+                <div class="button" onclick="setIframeSrc('/desserts.html')">
+                    <img src="/assets/dessert-icon.svg" alt="desserts icon" class="button-icon">
+                    <h3 class="button-text">Desserts</h3>
+                </div>
+                <butt class="button" onclick="setIframeSrc('/drinks.html')">
+                    <img src="/assets/drinks-icon.svg" alt="drinks icon" class="button-icon">
+                    <h3 class="button-text">Drinks</h3>
+                </butt>
             </div>
-            <div class="button">
-                <img src="/assets/pizzas-icon.svg" alt="pizzas icon" class="button-icon">
-                <h3 class="button-text">Pizzas</h3>
-            </div>
-            <div class="button">
-                <img src="/assets/burgers-icon.svg" alt="burgers icon" class="button-icon">
-                <h3 class="button-text">Burgers</h3>
-            </div>
-            <div class="button">
-                <img src="/assets/snacks-icon.svg" alt="snacks icon" class="button-icon">
-                <h3 class="button-text">Coffee</h3>
-            </div>
-            <div class="button">
-                <img src="/assets/dessert-icon.svg" alt="desserts icon" class="button-icon">
-                <h3 class="button-text">Desserts</h3>
-            </div>
-            <div class="button">
-                <img src="/assets/drinks-icon.svg" alt="drinks icon" class="button-icon">
-                <h3 class="button-text">Drinks</h3>
+            <div class="iframe-container">
+                <iframe src="/pizzas.html" style="height: 100%; width: 100%;"></iframe>
             </div>
         </div>
     </body>

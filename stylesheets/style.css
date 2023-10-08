@@ -18,12 +18,8 @@
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	gap: 10vw;
 	margin: 0;
 	padding: 0;
-	scroll-behavior: smooth;
 }
 
 /* BG class for div backgrounds */
