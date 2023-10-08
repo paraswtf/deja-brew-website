@@ -13,23 +13,33 @@
                 display: flex;
                 flex-direction: row;
                 border: 1px solid var(--lighter-brown);
-                border-radius: 2.5vw;
-                padding-block: 3vw;
-                padding-inline: 4vw;
+                border-radius: 1.5vw;
+                padding-block: 1.5vw;
+                padding-inline: 2vw;
             }
 
             .menu-card-image {
-                height: 30vw;
-                width: 30vw;
+                height: 15vw;
+                width: 15vw;
                 border-radius: 1.2vw;
+                object-fit: cover;
             }
 
             .menu-item-details-box {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                margin: 3vw;
+                margin-inline: 3vw;
                 color: var(--almost-white);
+            }
+
+            .price {
+                font-size: 2.5vw;
+                color: var(--almost-white);
+            }
+
+            h2 {
+                margin-bottom: 1.5vw;
             }
         </style>
     </head>
@@ -38,10 +48,14 @@
         <div class="menu-card">
             <img src="assets/sfpizza.jpg" class="menu-card-image">
             <div class="menu-item-details-box">
-                <h1>Margherita</h1>
-                <p style="font-size: 3vw; color: var(--almost-white);">Tomato sauce, fresh mozzarella, basil, sea salt,
+                <h2>Margherita</h2>
+                <p style="font-size: 2vw; color: var(--almost-white);">Tomato sauce, fresh mozzarella, basil, sea salt,
                     California
-                    extra virgin olive oil</>
+                    extra virgin olive oil
+                </p>
+            </div>
+            <div>
+                <p class="price">₹500/₹350</p>
             </div>
             <!-- <img src="/assets/Hero Image.png" class="menu-card-image"> -->
         </div>
