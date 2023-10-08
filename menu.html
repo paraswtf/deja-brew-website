@@ -44,22 +44,26 @@
                 width: 14vw;
                 height: 10vw;
                 border: 1px solid var(--dark-brown);
+                border-right: none;
                 cursor: pointer;
                 transition: all 0.1s ease-in-out;
                 overflow: hidden;
             }
 
-            .button:hover {
+            .button:hover,
+            .button-clicked {
                 background-color: var(--dark-brown);
                 color: var(--white);
             }
 
-            .button:hover .button-icon {
+            .button:hover .button-icon,
+            .button-clicked .button-icon {
                 height: 10vw;
                 width: 10vw;
             }
 
-            .button:hover .button-text {
+            .button:hover .button-text,
+            .button-clicked .button-text {
                 display: none;
             }
 
@@ -100,6 +104,7 @@
             }
 
             .iframe-container {
+                margin-block: -1px;
                 display: flex;
                 width: 100%;
             }
