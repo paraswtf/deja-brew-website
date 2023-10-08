@@ -10,13 +10,115 @@
         <link rel="stylesheet" href="/stylesheets/fonts.css">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <link rel="stylesheet" href="/stylesheets/navbar.css">
-        <link rel="stylesheet" href="/stylesheets/index.css">
         <link rel="stylesheet" href="/stylesheets/footer.css">
         <!-- Stylesheets end -->
+        <style>
+            .menu-head {
+                color: var(--dark-brown);
+            }
+
+            .menu-head-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 3vw;
+            }
+
+            .button {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1vw;
+                padding: 1vw;
+                border-radius: 1vw;
+                background-color: var(--white);
+                color: var(--dark-brown);
+                width: 14vw;
+                height: 10vw;
+                border: 1px solid var(--dark-brown);
+                cursor: pointer;
+                transition: all 0.1s ease-in-out;
+                overflow: hidden;
+            }
+
+            .button:hover {
+                background-color: var(--dark-brown);
+                color: var(--white);
+            }
+
+            .button:hover .button-icon {
+                height: 10vw;
+                width: 10vw;
+            }
+
+            .button:hover .button-text {
+                display: none;
+            }
+
+            .button-icon {
+                width: 5vw;
+                height: 5vw;
+                transition: all 0.1s ease-in-out;
+            }
+
+            .menu-logo {
+                width: 10vw;
+                height: 10vw;
+            }
+
+            .buttons-group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1vw;
+                margin-inline: 20vw;
+            }
+        </style>
     </head>
 
-    <body>
-        <div class></div>
+    <body class="light-pattern-bg">
+        <nav>
+            <a href="/"><img src="/assets/Logo.webp" class="navlovo" /></a>
+            <ul class="navlinks">
+                <li><a href="/" class="link-effect">Home</a></li>
+                <li><a href="/about" class="link-effect">About</a></li>
+                <li><a href="/menu" class="link-effect">Menu</a></li>
+                <li><a href="/locations" class="link-effect">Locations</a></li>
+        </nav>
+        <div class="navspacer"></div>
+        <div class="menu-head-container">
+            <img src="/assets/food-icon.svg" alt="food-icon" class="menu-logo">
+            <h1 class="menu-head">Our Menu</h1>
+        </div>
+        <div class="buttons-group">
+            <div class="button">
+                <img src="/assets/coffee-icon.svg" alt="coffee icon" class="button-icon">
+                <h3 class="button-text">Coffee</h3>
+            </div>
+            <div class="button">
+                <img src="/assets/pizzas-icon.svg" alt="pizzas icon" class="button-icon">
+                <h3 class="button-text">Pizzas</h3>
+            </div>
+            <div class="button">
+                <img src="/assets/burgers-icon.svg" alt="burgers icon" class="button-icon">
+                <h3 class="button-text">Burgers</h3>
+            </div>
+            <div class="button">
+                <img src="/assets/snacks-icon.svg" alt="snacks icon" class="button-icon">
+                <h3 class="button-text">Coffee</h3>
+            </div>
+            <div class="button">
+                <img src="/assets/dessert-icon.svg" alt="desserts icon" class="button-icon">
+                <h3 class="button-text">Desserts</h3>
+            </div>
+            <div class="button">
+                <img src="/assets/drinks-icon.svg" alt="drinks icon" class="button-icon">
+                <h3 class="button-text">Drinks</h3>
+            </div>
+        </div>
     </body>
 
 </html>
