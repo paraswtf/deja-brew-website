@@ -39,3 +39,70 @@ body {
 	background-repeat: repeat;
 	background-size: 100px;
 }
+
+/* Classes for different spacings used in the website instead of using complicated margins on divs, this is easy to edit from one place later */
+.spacing-large {
+	width: 100%;
+	height: 9.375vw;
+}
+
+.spacing-medium {
+	width: 100%;
+	height: 4.6875vw;
+}
+
+.spacing-small {
+	width: 100%;
+	height: 6.25vw;
+}
+
+.spacing-micro {
+	width: 100%;
+	height: 1.56vw;
+}
+
+iframe {
+	border: none;
+}
+
+/* Link hover underline style inspired by https://paraswtf.com/ & http://paras.wtf/ */
+.link-effect {
+	font-size: var(--navlinks);
+	font-family: "Dela Gothic One", sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	position: relative;
+	transition: color var(--transition), width var(--transition);
+	color: var(--light-brown);
+	margin: 0px;
+
+	&:hover {
+		color: var(--dark-brown);
+		outline: 0;
+
+		&:after {
+			width: 100%;
+		}
+
+		& > * {
+			color: var(--light-brown) !important;
+			transition: var(--transition);
+		}
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 1px;
+		position: relative;
+		background-color: var(--dark-brown);
+		transition: var(--transition);
+		opacity: 0.5;
+	}
+}
+
+.navspacer {
+	margin-top: 150px;
+}

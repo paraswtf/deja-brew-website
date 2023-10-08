@@ -36,6 +36,8 @@
         <link rel="stylesheet" href="/stylesheets/footer.css">
         <!-- Stylesheets end -->
 
+        <script src="/commons.js"></script>
+
         <!-- Icon setup -->
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
@@ -52,10 +54,10 @@
         <nav>
             <a href="/"><img src="/assets/Logo.webp" class="navlovo" /></a>
             <ul class="navlinks">
-                <li><a href="/home" class="navlink">Home</a></li>
-                <li><a href="/about" class="navlink">About</a></li>
-                <li><a href="/menu" class="navlink">Menu</a></li>
-                <li><a href="/locations" class="navlink">Locations</a></li>
+                <li><a href="/home" class="link-effect">Home</a></li>
+                <li><a href="/about" class="link-effect">About</a></li>
+                <li><a href="/menu" class="link-effect">Menu</a></li>
+                <li><a href="/locations" class="link-effect">Locations</a></li>
         </nav>
         <section id="home">
             <div class="hero">
@@ -267,51 +269,7 @@
                     style="color: var(--twitter-blue)"><b>@DejaBrewCafe</b></span> on X
                 (formerly Twitter)</p>
         </section>
-        <footer class="footer dark-pattern-bg">
-            <div class="footer-inner-div">
-                <div class="foot-logo-container">
-                    <img class="foot-logo" src="/assets/Logo.png" />
-                    <div class="foot-logo-text-container">
-                        <h2 class="foot-logo-text">Deja Brew</h2>
-                        <p class="journeytext-para foot-logo-subtext">Step into a world where coffee isn't just a
-                            beverage,
-                            <br />
-                            but a journey that speaks of home.
-                        </p>
-                        <div class="socialicons">
-                            <img class="socialicon" src="/assets/instagramicon.svg" />
-                            <img class="socialicon" src="/assets/xicon.svg" />
-                            <img class="socialicon" src="/assets/linkedinicon.svg" />
-                        </div>
-                    </div>
-                </div>
-                <div class="journeyline footline"></div>
-                <div class="foot-links">
-                    <div class="foot-link-group">
-                        <h3 class="foot-link-group-header">Website</h3>
-                        <a href="/home" class="navlink foot-link">Home</a>
-                        <a href="/about" class="navlink foot-link">About</a>
-                        <a href="/menu" class="navlink foot-link">Menu</a>
-                        <a href="/locations" class="navlink foot-link">Locations</a>
-                        <a href="/contact" class="navlink foot-link">Contact</a>
-                    </div>
-                    <div class="foot-link-group">
-                        <h3 class="foot-link-group-header">Company</h3>
-                        <a href="/home" class="navlink foot-link">Franchising</a>
-                        <a href="/about" class="navlink foot-link">Our Design</a>
-                        <a href="/menu" class="navlink foot-link">Our Blog</a>
-                        <a href="/locations" class="navlink foot-link">Catering</a>
-                        <a href="/contact" class="navlink foot-link">Reviews</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footnote-container">
-                <p class="footnote">
-                    Designed with &lt;3 by Paras Deshpande </p>
-                <p class="footnote">
-                    Developed by Paras Deshpande, Aadhya Rastogi, Shruti Nair & Avni Sharma.</p>
-            </div>
-        </footer>
+        <iframe src="/footer.html" id="footer-iframe" onload="iframeLoaded()" scrolling="no"></iframe>
     </body>
 
 </html>

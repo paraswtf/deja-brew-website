@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deja Brew - 404</title>
+        <link rel="stylesheet" href="/stylesheets/fonts.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/navbar.css">
+        <link rel="stylesheet" href="/stylesheets/footer.css">
+        <script src="/commons.js"></script>
+        <style>
+            body {
+                display: flex;
+                justify-content: space-between;
+                min-height: 100vh;
+            }
+
+            .er404-page {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .cup {
+                height: 210px;
+                width: 220px;
+                border: 10px solid var(--dark-brown);
+                position: relative;
+                border-radius: 20px 20px 100px 100px;
+                background: url("/assets/coffee-img-1.svg"), url("/assets/coffee-img-2.svg");
+                background-position: 0 0, 0 0;
+                background-repeat: repeat-x;
+                animation: coffee 4s infinite linear;
+                transition: all 0.5s ease-in-out;
+            }
+
+            @keyframes coffee {
+                100% {
+                    background-position: -100% 0, -100% 0;
+                }
+            }
+
+            .cup:before {
+                content: "";
+                position: absolute;
+                height: 80px;
+                width: 60px;
+                border: 10px solid var(--dark-brown);
+                border-left: none;
+                right: -75px;
+                top: 30px;
+                border-radius: 0 30px 30px 0;
+            }
+
+
+            .cup:after {
+                position: absolute;
+                content: "";
+                height: 10px;
+                width: 300px;
+                background-color: var(--dark-brown);
+                left: -45px;
+                bottom: -10px;
+                border-radius: 10px;
+            }
+
+            .bubble {
+                height: 15px;
+                width: 15px;
+                background-color: var(--light-brown);
+                border-radius: 50%;
+                position: absolute;
+                animation: bubbles forwards infinite;
+                opacity: 0.6;
+            }
+
+            @keyframes bubbles {
+                100% {
+                    transform: translateY(-150px);
+                    opacity: 0;
+                }
+            }
+
+            .bubble-1 {
+                left: 30px;
+                bottom: 10px;
+                animation-delay: 0.5s;
+                animation-duration: 3s;
+            }
+
+            .bubble-2 {
+                left: 80px;
+                bottom: 35px;
+                animation-delay: 1.2s;
+                animation-duration: 4s;
+            }
+
+            .bubble-3 {
+                left: 140px;
+                bottom: 30px;
+                animation-duration: 4s;
+            }
+
+            .er404-head {
+                color: var(--dark-brown);
+            }
+
+            .er404-link {
+                color: var(--twitter-blue);
+            }
+        </style>
+    </head>
+
+    <body class="light-pattern-bg">
+        <nav>
+            <a href="/"><img src="/assets/Logo.webp" class="navlovo" /></a>
+            <ul class="navlinks">
+                <li><a href="/home" class="link-effect">Home</a></li>
+                <li><a href="/about" class="link-effect">About</a></li>
+                <li><a href="/menu" class="link-effect">Menu</a></li>
+                <li><a href="/locations" class="link-effect">Locations</a></li>
+        </nav>
+        <div class="navspacer"></div>
+        <div class="er404-page" bgcolor="red">
+            <div class="cup">
+                <div class="bubble bubble-1"></div>
+                <div class="bubble bubble-2"></div>
+                <div class="bubble bubble-3"></div>
+            </div>
+            <h1 class="er404-head">404 - Page not found</h1>
+            <a class="link-effect foot-link er404-link" href="/">Take me back to home -&gt; </a>
+        </div>
+        <iframe src="/footer.html" id="footer-iframe" onload="iframeLoaded()" scrolling="no"></iframe>
+    </body>
+
+</html>
