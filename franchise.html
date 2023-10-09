@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="/stylesheets/fonts.css">
-    <title>Deja Brew - Franchising</title>
-    <style type="text/css">
-        :root {
-	    /* Make vars for other team members to get consistent content */
 
-	    /* Colors */
-	    --orange: #d08875;
-	    --dark-brown: #433839;
-	    --light-brown: #645443;
-	    --lighter-brown: #a38c77;
-	    --almost-black: #1e1e1e;
-	    --almost-white: #d9d9d9;
-	    --white: #ffffff;
-	    --twitter-blue: #009ded;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/fonts.css">
+        <title>Deja Brew - Franchising</title>
+        <style type="text/css">
+            :root {
+                /* Make vars for other team members to get consistent content */
 
-	    /* Animations & Transitions */
-	    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-        }
+                /* Colors */
+                --orange: #d08875;
+                --dark-brown: #433839;
+                --light-brown: #645443;
+                --lighter-brown: #a38c77;
+                --almost-black: #1e1e1e;
+                --almost-white: #d9d9d9;
+                --white: #ffffff;
+                --twitter-blue: #009ded;
 
-        body {
-	    display: flex;
-	    flex-direction: column;
-	    gap: 10vw;
-	    margin: 0;
-	    padding: 0;
-	    scroll-behavior: smooth;
-        }
+                /* Animations & Transitions */
+                --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
 
-        /* BG class for div backgrounds */
-        
-        body{
-        background: var(--white);
-	    background-image: url("/assets/Pattern.png");
-	    background-repeat: repeat;
-	    background-size: 150px;
-        width: 1512px;
-        height: 7728px;
-        }
-        .plane-icon {
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 10vw;
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+            }
+
+            /* BG class for div backgrounds */
+
+            body {
+                background: var(--white);
+                background-image: url("/assets/Pattern.png");
+                background-repeat: repeat;
+                background-size: 150px;
+                width: 1512px;
+                height: 7728px;
+            }
+
+            .plane-icon {
                 position: absolute;
                 left: -1vw;
                 top: 12vw;
@@ -54,414 +56,484 @@
                 height: 10vw;
                 width: 10vw;
             }
-        div #first{
-        color: #433839;
-        text-align: center;
-        font-family: Dela Gothic One;
-        font-size: 54px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        align-self: stretch;
-        text-align: center;
-       }  
-       div #second{color: #A38C77;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 54px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       align-self: stretch;
-       text-align: right;
-       }
-       div #third{
-       background-image: url("/assets/FranchiseMockup-2\ 1.png");
-	   background-repeat: no-repeat ;
-       width: 1512px;
-       height: 400px;
-       flex-shrink: 0;
-       }
-       div #fourth{
-       width: 30px;
-       height: 193px;
-       flex-shrink: 0;
-       align-items: center;
-       }
-       div #fifth{
-       color: #433839;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 54px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       }
-       p #first{
-       color: #6B6B6B;
-       text-align: center;
-        
-        /* Body large */
-       font-family: David Libre;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #sixth{color: #433839;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 54px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       }
-       div #seventh{
-       color: #433839;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 54px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #eight{
-       color: #D08875;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #ninth{
-       color: #645443;
-       text-align: center;
-       font-family: David Libre;
-       font-size: 26px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       width: 500px;
-       height: 100px;
-       margin-inline: auto;
-       }
-       div #tenth{
-       color: #D08875;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #eleventh{
-       color: #645443;
-       text-align: center;
-       font-family: David Libre;
-       font-size: 26px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       width: 500px;
-       }
-       div #twelth{
-       color: #D08875;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #thirteenth{
-       color: #645443;
-       text-align: center;
-       font-family: David Libre;
-       font-size: 26px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       width: 500px;
-       }
-       div #fourteenth{
-       color: #D08875;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #fiveteenth{
-       color: #645443;
-       text-align: center;
-       font-family: David Libre;
-       font-size: 26px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       width: 500px;
-       margin-inline: auto;
-       }
-       div #sixteenth{
-       color: #D08875;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #seventeenth{
-       color: #645443;
-       text-align: center;
-       font-family: David Libre;
-       font-size: 26px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       width: 500px;
-       margin-inline: auto;
 
-       }
-       div #eighteenth{
-       color: #D08875;
-       text-align: auto;
-       font-family: Dela Gothic One;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       width: 400px;
-       margin-inline: auto;
-       }
-       div #nineteenth{
-       color: #645443;
-       text-align: center;
-       font-family: David Libre;
-       font-size: 26px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       width: 500px;
-       margin-inline: auto;
-       }
-       div #twentieth{
-       color: #433839;
-       text-align: center;
-       font-family: Dela Gothic One;
-       font-size: 54px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       margin-inline: auto;
-       }
-       div #twentyone{
-       color: #645443;
-       text-align: center;
+            div #first {
+                color: #433839;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                align-self: stretch;
+                text-align: center;
+            }
 
-       /* Body large */
-       font-family: David Libre;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       width: 995px;
-       margin-inline: auto;
-       }
-       div #dot1{
-       width: 30px;
-       height: 208px;
-       flex-shrink: 0;
-       margin-inline: auto;
-       }
-       div #dot2{
-       width: 30px;
-       height: 208px;
-       flex-shrink: 0;
-       margin-inline: auto;
-       }
-       div #dot3{
-       width: 30px;
-       height: 208px;
-       flex-shrink: 0;
-       margin-inline: auto;
-       }
-       div #dot4{
-       width: 30px;
-       height: 208px;
-       flex-shrink: 0;
-       margin-inline: auto;
-       }
-       div #dot6{
-       width: 30px;
-       height: 208px;
-       flex-shrink: 0;
-       margin-inline: auto;
-       }
-       div #twentytwo{
-       color: #B55B52;
-       text-align: center;
+            div #second {
+                color: #A38C77;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                align-self: stretch;
+                text-align: right;
+            }
 
-       /* Body large */
-       font-family: David Libre;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       width: 995px;
-       margin-inline: auto;
-       }
-       div #data1{
-       color: var(--dark-brown, #433839);
-       text-align: center;
+            div #third {
+                background-image: url("/assets/FranchiseMockup-2\ 1.png");
+                background-repeat: no-repeat;
+                width: 1512px;
+                height: 400px;
+                flex-shrink: 0;
+            }
 
-       /* Heading 3 */
-       font-family: Dela Gothic One;
-       font-size: 36px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-       align-self: stretch;
-       }
-       
-       
-    </style>
-</head>
-<body>
-    <section id="Franchise">
-        <div class="plane-icon-container">
-            <img src="/assets/plane-icon.svg" class="plane-icon">
-        </div><br><br><br>
-        <div class="Franchiseheading">
-            <h1 class="Franchise-left" id="first"><b>Franchise with Deja Brew</b></h1>
-            <h1 class="Franchise-right" align="right" id="second"><b>Brew Your Own Success Story</b></h1><br><br><br><br><br><br><br>
-            <div class="Franchise-photo" id="third">
-            <img src="/assets/FranchiseMockup-2 1.png">
-            </div><br><br>
-        </div>
-        <div class="Line-dot" id="fourth">
-            <div id="dot1"><img src="/assets/svg process.png"></div>
-        </div><br><br><br><br><br><br><br><br>
-        
-        <div class="FranchiseHeading">
-            <div class="WhyFranchise-header" id="fifth"><b>Why Choose Deja Brew for Franchising?</b><br><br>
-            <img src="/assets/FranchiseMockup-1 1 (1).png">
-            <img src="assets/FranchiseMockup-3 1.png">
-            <img src="/assets/Rectangle 3.png"><br>
-            <p class="WhyFranchise-para" id="First"><img src="/assets/quote-svgrepo-com 1.png">At Deja Brew, we're not just about serving exceptional coffee. We're about creating spaces that feel like home, where every sip speaks of comfort, connection, and community. If you're passionate about coffee and want to be a part of a brand that values quality, tradition, and sustainability, then Deja Brew could be the perfect franchise opportunity for you.<img src="/assets/quote-svgrepo-com 2.png"></p> 
-            </div>   
-        </div><br><br><br><br><br><br>
-        <div class="WhatSeparate">
-            <div class="Separate" id="sixth"><b>What Sets Deja Brew Apart?</b><br><br>
-            <img src="/assets/Setting Apart Cards.png">
-            <img src="assets/Line 2.png">
-            <img src="assets/Setting Apart Cards (1).png">
-            <img src="assets/Line 2.png">
-            <img src="assets/Setting Apart Cards (2).png">
-            </div>
-        </div><br><br><br><br><br>
-    
-    <div class="FranchiseProcess">
-        <div class="process" id="seventh"><b>The franchise Process...</b>
-        </div>
-    </div><br><br><br><br>
-    <div class="InquiryForm">
-        <div class="Form" id="eight"><b>Fill out the Inquiry Form</b><br>
-           <img src="/assets/inquiry-form (1).svg" align="left" >
-        </div><br>
-           <div class="Form-para" id="ninth"><p>Begin by expressing your interest in franchising with Deja Brew. We'll provide you with an information packet and answer any initial questions you may have.</p></div><br><br><br><br>
-           <div id="dot2"><img src="/assets/svg process.png"></div><br><br>
-        
-            
-        </div>
-        <div class="Application">
-            <div class="ApplicationText" id="tenth"><b>Application</b><br>
-                <img src="/assets/application (1).svg" align="right">
-            </div><br>
-            <div class="ApplicationText-para" id="eleventh"><p>Complete the franchise application, allowing us to get to know you better and assess if you're a good fit for the Deja Brew family.</p></div><br><br>
-            <div id="dot3"><img src="/assets/svg process.png"></div><br><br>
-            
-        </div>
-        <div class="DiscoveryDay">
-            <div class="DiscoveryText" id="twelth"><b>Discovery Day</b><br>
-                <img src="/assets/discovery (1).svg" align="left" >
-            </div><br>
-            <div class="DiscoveryText-para" id="thirteenth"><p>Complete the franchise application, allowing us to get to know you better and assess if you're a good fit for the Deja Brew family.</p></div><br><br>
-            <div id="dot4"><img src="/assets/svg process.png"></div><br><br>
-            
-        </div>
-        <div class="FranchiseAgreement">
-            <div class="AgreementText" id="fourteenth"><b>Franchise Agreement</b><br>
-                <img src="/assets/agreement (1).svg" align="right">
-            </div><br>
-            <div class="AgreementText-para" id="fiveteenth"><p>Once both parties are aligned, we'll provide you with the franchise agreement. This document outlines the terms and conditions of our partnership.</p></div><br><br>
-            <div id="dot5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/assets/svg process.png"></div><br><br>
-        </div>
-        <div class="TrainingSetup">
-            <div class="TrainingSetup" id="sixteenth"><b>Training and Setup</b><br>
-                <img src="/assets/setup (1).svg" align="left">
-            </div><br>
-            <div class="TrainingSetup" id="seventeenth"><p>Receive comprehensive training on all aspects of running a Deja Brew cafe. Our team will assist you in setting up your own space, ensuring it reflects the warmth and charm of the Deja Brew brand.</p></div><br><br>
-            <div id="dot6"><img src="/assets/svg process.png"></div><br><br>
-        </div>
-        <div class="GrandOpening">
-            <div class="GrandOpening" id="eighteenth"><b>Grand Opening</b>
-                <img src="/assets/Frame 4.png" align="right">
-            </div><br>
-            <div class="GrandOpening" id="nineteenth"><p>Launch your Deja Brew cafe and start creating moments that feel like home for your community</p>
-            </div>
-        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="JoinFamily">
-            <div class="JoinFamily-Header" id="twentieth"><b>Join the Deja Brew Family</b>
-            </div><br><br>
-            <div class="JoinFamily-text" id="twentyone"><p>If you're ready to embark on a journey of entrepreneurship with a brand that believes in the power of coffee to create connections, we'd love to hear from you. Contact us today to take the first step towards becoming a Deja Brew franchisee.</p>
+            div #fourth {
+                width: 30px;
+                height: 193px;
+                flex-shrink: 0;
+                align-items: center;
+            }
+
+            div #fifth {
+                color: #433839;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            p #first {
+                color: #6B6B6B;
+                text-align: center;
+
+                /* Body large */
+                font-family: David Libre;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #sixth {
+                color: #433839;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            div #seventh {
+                color: #433839;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #eight {
+                color: #D08875;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #ninth {
+                color: #645443;
+                text-align: center;
+                font-family: David Libre;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 500px;
+                height: 100px;
+                margin-inline: auto;
+            }
+
+            div #tenth {
+                color: #D08875;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #eleventh {
+                color: #645443;
+                text-align: center;
+                font-family: David Libre;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+                width: 500px;
+            }
+
+            div #twelth {
+                color: #D08875;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #thirteenth {
+                color: #645443;
+                text-align: center;
+                font-family: David Libre;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+                width: 500px;
+            }
+
+            div #fourteenth {
+                color: #D08875;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #fiveteenth {
+                color: #645443;
+                text-align: center;
+                font-family: David Libre;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 500px;
+                margin-inline: auto;
+            }
+
+            div #sixteenth {
+                color: #D08875;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #seventeenth {
+                color: #645443;
+                text-align: center;
+                font-family: David Libre;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 500px;
+                margin-inline: auto;
+
+            }
+
+            div #eighteenth {
+                color: #D08875;
+                text-align: auto;
+                font-family: Dela Gothic One;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 400px;
+                margin-inline: auto;
+            }
+
+            div #nineteenth {
+                color: #645443;
+                text-align: center;
+                font-family: David Libre;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 500px;
+                margin-inline: auto;
+            }
+
+            div #twentieth {
+                color: #433839;
+                text-align: center;
+                font-family: Dela Gothic One;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-inline: auto;
+            }
+
+            div #twentyone {
+                color: #645443;
+                text-align: center;
+
+                /* Body large */
+                font-family: David Libre;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 995px;
+                margin-inline: auto;
+            }
+
+            div #dot1 {
+                width: 30px;
+                height: 208px;
+                flex-shrink: 0;
+                margin-inline: auto;
+            }
+
+            div #dot2 {
+                width: 30px;
+                height: 208px;
+                flex-shrink: 0;
+                margin-inline: auto;
+            }
+
+            div #dot3 {
+                width: 30px;
+                height: 208px;
+                flex-shrink: 0;
+                margin-inline: auto;
+            }
+
+            div #dot4 {
+                width: 30px;
+                height: 208px;
+                flex-shrink: 0;
+                margin-inline: auto;
+            }
+
+            div #dot6 {
+                width: 30px;
+                height: 208px;
+                flex-shrink: 0;
+                margin-inline: auto;
+            }
+
+            div #twentytwo {
+                color: #B55B52;
+                text-align: center;
+
+                /* Body large */
+                font-family: David Libre;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 995px;
+                margin-inline: auto;
+            }
+
+            div #data1 {
+                color: var(--dark-brown, #433839);
+                text-align: center;
+
+                /* Heading 3 */
+                font-family: Dela Gothic One;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                align-self: stretch;
+            }
+        </style>
+        <!-- Stylesheets end -->
+        <script src="/commons.js"></script>
+        <!-- Navbar created using js so that we don't have to write code again and again-->
+        <script src="/navbar.js" defer></script>
+    </head>
+
+    <body>
+        <section id="Franchise">
+            <div class="plane-icon-container">
+                <img src="/assets/plane-icon.svg" class="plane-icon">
             </div><br><br><br>
-        </div>
-        <div class="FillForm">
-            <div class="FillForm-Header" id="twentytwo">Fill out the form below and we’ll reach out to you.
-            </div><br><br><br>
-        </div>
-        <div class="Enquiry Form" align="center"><b>Enquiry Form</b>
-            
-        </div>
-        <!---FORM IN HTML-->
-        <table
-        bgcolor="#FFF"
-        cellspacing="5"
-        cellpadding="5"
-        height="300"
-        width="30">
-            <form method="post" height="30" width="30">
-            <!---Autofocus to input field automatically get focus when the page loads-->
-            <tr><td><input type="text"size="25"name="your_name"autofocus required placeholder="Your Name"></td><td><input type="email"size="25"name="email_id"required placeholder="E-mail"></td></tr>
-            <tr><td><input type="text"size="25"name="co_name"required placeholder="Company/Organization"></td><td><textarea required placeholder="City"></textarea></td></tr>
-            <tr><td><inputtype="text" size="25"name="state"required placeholder="State"></td><td><input type="text" required placeholder="Postcode" /></td></tr>
-            <tr><td><input type="text"size="25"name="inst_name"autofocus required placeholder="Country"></td><td><input type="text"size="25"name="inst_name"autofocus required placeholder="Telephone"></td></tr>
-            <tr><td><input type="text"size="80"textarearows="5"cols="15"required placeholder="Why do you want to  become a Deja Brew Franchisee?"></td></tr>
-            <tr><td>Give me a call back...</td></tr>
-            </form>
-        </table>
+            <div class="Franchiseheading">
+                <h1 class="Franchise-left" id="first"><b>Franchise with Deja Brew</b></h1>
+                <h1 class="Franchise-right" align="right" id="second"><b>Brew Your Own Success Story</b></h1>
+                <br><br><br><br><br><br><br>
+                <div class="Franchise-photo" id="third">
+                    <img src="/assets/FranchiseMockup-2 1.png">
+                </div><br><br>
+            </div>
+            <div class="Line-dot" id="fourth">
+                <div id="dot1"><img src="/assets/svg process.png"></div>
+            </div><br><br><br><br><br><br><br><br>
+
+            <div class="FranchiseHeading">
+                <div class="WhyFranchise-header" id="fifth"><b>Why Choose Deja Brew for Franchising?</b><br><br>
+                    <img src="/assets/FranchiseMockup-1 1 (1).png">
+                    <img src="assets/FranchiseMockup-3 1.png">
+                    <img src="/assets/Rectangle 3.png"><br>
+                    <p class="WhyFranchise-para" id="First"><img src="/assets/quote-svgrepo-com 1.png">At Deja Brew,
+                        we're not just about serving exceptional coffee. We're about creating spaces that feel like
+                        home, where every sip speaks of comfort, connection, and community. If you're passionate about
+                        coffee and want to be a part of a brand that values quality, tradition, and sustainability, then
+                        Deja Brew could be the perfect franchise opportunity for you.<img
+                            src="/assets/quote-svgrepo-com 2.png"></p>
+                </div>
+            </div><br><br><br><br><br><br>
+            <div class="WhatSeparate">
+                <div class="Separate" id="sixth"><b>What Sets Deja Brew Apart?</b><br><br>
+                    <img src="/assets/Setting Apart Cards.png">
+                    <img src="assets/Line 2.png">
+                    <img src="assets/Setting Apart Cards (1).png">
+                    <img src="assets/Line 2.png">
+                    <img src="assets/Setting Apart Cards (2).png">
+                </div>
+            </div><br><br><br><br><br>
+
+            <div class="FranchiseProcess">
+                <div class="process" id="seventh"><b>The franchise Process...</b>
+                </div>
+            </div><br><br><br><br>
+            <div class="InquiryForm">
+                <div class="Form" id="eight"><b>Fill out the Inquiry Form</b><br>
+                    <img src="/assets/inquiry-form (1).svg" align="left">
+                </div><br>
+                <div class="Form-para" id="ninth">
+                    <p>Begin by expressing your interest in franchising with Deja Brew. We'll provide you with an
+                        information packet and answer any initial questions you may have.</p>
+                </div><br><br><br><br>
+                <div id="dot2"><img src="/assets/svg process.png"></div><br><br>
 
 
+            </div>
+            <div class="Application">
+                <div class="ApplicationText" id="tenth"><b>Application</b><br>
+                    <img src="/assets/application (1).svg" align="right">
+                </div><br>
+                <div class="ApplicationText-para" id="eleventh">
+                    <p>Complete the franchise application, allowing us to get to know you better and assess if you're a
+                        good fit for the Deja Brew family.</p>
+                </div><br><br>
+                <div id="dot3"><img src="/assets/svg process.png"></div><br><br>
 
-        
-        
+            </div>
+            <div class="DiscoveryDay">
+                <div class="DiscoveryText" id="twelth"><b>Discovery Day</b><br>
+                    <img src="/assets/discovery (1).svg" align="left">
+                </div><br>
+                <div class="DiscoveryText-para" id="thirteenth">
+                    <p>Complete the franchise application, allowing us to get to know you better and assess if you're a
+                        good fit for the Deja Brew family.</p>
+                </div><br><br>
+                <div id="dot4"><img src="/assets/svg process.png"></div><br><br>
 
-            
-        
+            </div>
+            <div class="FranchiseAgreement">
+                <div class="AgreementText" id="fourteenth"><b>Franchise Agreement</b><br>
+                    <img src="/assets/agreement (1).svg" align="right">
+                </div><br>
+                <div class="AgreementText-para" id="fiveteenth">
+                    <p>Once both parties are aligned, we'll provide you with the franchise agreement. This document
+                        outlines the terms and conditions of our partnership.</p>
+                </div><br><br>
+                <div id="dot5">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                        src="/assets/svg process.png"></div><br><br>
+            </div>
+            <div class="TrainingSetup">
+                <div class="TrainingSetup" id="sixteenth"><b>Training and Setup</b><br>
+                    <img src="/assets/setup (1).svg" align="left">
+                </div><br>
+                <div class="TrainingSetup" id="seventeenth">
+                    <p>Receive comprehensive training on all aspects of running a Deja Brew cafe. Our team will assist
+                        you in setting up your own space, ensuring it reflects the warmth and charm of the Deja Brew
+                        brand.</p>
+                </div><br><br>
+                <div id="dot6"><img src="/assets/svg process.png"></div><br><br>
+            </div>
+            <div class="GrandOpening">
+                <div class="GrandOpening" id="eighteenth"><b>Grand Opening</b>
+                    <img src="/assets/Frame 4.png" align="right">
+                </div><br>
+                <div class="GrandOpening" id="nineteenth">
+                    <p>Launch your Deja Brew cafe and start creating moments that feel like home for your community</p>
+                </div>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="JoinFamily">
+                <div class="JoinFamily-Header" id="twentieth"><b>Join the Deja Brew Family</b>
+                </div><br><br>
+                <div class="JoinFamily-text" id="twentyone">
+                    <p>If you're ready to embark on a journey of entrepreneurship with a brand that believes in the
+                        power of coffee to create connections, we'd love to hear from you. Contact us today to take the
+                        first step towards becoming a Deja Brew franchisee.</p>
+                </div><br><br><br>
+            </div>
+            <div class="FillForm">
+                <div class="FillForm-Header" id="twentytwo">Fill out the form below and we’ll reach out to you.
+                </div><br><br><br>
+            </div>
+            <div class="Enquiry Form" align="center"><b>Enquiry Form</b>
 
-        
-    
-</body>
+            </div>
+            <!---FORM IN HTML-->
+            <table bgcolor="#FFF" cellspacing="5" cellpadding="5" height="300" width="30">
+                <form method="post" height="30" width="30">
+                    <!---Autofocus to input field automatically get focus when the page loads-->
+                    <tr>
+                        <td><input type="text" size="25" name="your_name" autofocus required placeholder="Your Name">
+                        </td>
+                        <td><input type="email" size="25" name="email_id" required placeholder="E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="25" name="co_name" required placeholder="Company/Organization">
+                        </td>
+                        <td><textarea required placeholder="City"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <inputtype="text" size="25" name="state" required placeholder="State">
+                        </td>
+                        <td><input type="text" required placeholder="Postcode" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="25" name="inst_name" autofocus required placeholder="Country"></td>
+                        <td><input type="text" size="25" name="inst_name" autofocus required placeholder="Telephone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="80" textarearows="5" cols="15" required
+                                placeholder="Why do you want to  become a Deja Brew Franchisee?"></td>
+                    </tr>
+                    <tr>
+                        <td>Give me a call back...</td>
+                    </tr>
+                </form>
+            </table>
+            <iframe src="/footer.html" id="footer-iframe" onload="iframeLoaded()" scrolling="no"></iframe>
+    </body>
+
 </html>

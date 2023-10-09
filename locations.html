@@ -1,4 +1,5 @@
 <html>
+
   <head>
     <title>Deja Brew Location</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
@@ -26,12 +27,15 @@
         line-height: normal;
         align-self: stretch;
       }
+
       div #MainLocation {
         text-align: center;
       }
+
       div #Locationheading {
         margin-left: 0px;
       }
+
       div #Locationheading2 {
         margin-left: 200px;
       }
@@ -72,6 +76,7 @@
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
         width: 700px;
       }
+
       .Address1 {
         border-style: dotted;
         display: flex;
@@ -79,6 +84,7 @@
         text-align: left;
         justify-content: space-between;
       }
+
       .Address2 {
         border-style: dotted;
         display: flex;
@@ -86,6 +92,7 @@
         text-align: left;
         justify-content: space-between;
       }
+
       .Address3 {
         border-style: dotted;
         display: flex;
@@ -93,6 +100,7 @@
         text-align: left;
         justify-content: space-between;
       }
+
       .Address4 {
         border-style: dotted;
         display: flex;
@@ -100,6 +108,7 @@
         text-align: left;
         justify-content: space-between;
       }
+
       div #text1 {
         display: flex;
         flex-direction: column;
@@ -114,6 +123,7 @@
         font-weight: 400;
         line-height: normal;
       }
+
       div #text2 {
         display: flex;
         flex-direction: column;
@@ -128,6 +138,7 @@
         font-weight: 400;
         line-height: normal;
       }
+
       div #text3 {
         display: flex;
         flex-direction: column;
@@ -142,6 +153,7 @@
         font-weight: 400;
         line-height: normal;
       }
+
       div #text4 {
         display: flex;
         flex-direction: column;
@@ -156,13 +168,17 @@
         font-weight: 400;
         line-height: normal;
       }
+
       div #img1 {
         width: 150px;
         height: 150px;
         flex-shrink: 0;
       }
-      
     </style>
+    <!-- Stylesheets end -->
+    <script src="/commons.js"></script>
+    <!-- Navbar created using js so that we don't have to write code again and again-->
+    <script src="/navbar.js" defer></script>
   </head>
 
   <body class="light-pattern-bg">
@@ -225,99 +241,48 @@
       </div>
       <br>
       <p>
-        <h2>Couldn't find an outlet nearby?<br>
-          <br>
+      <h2>Couldn't find an outlet nearby?<br>
+        <br>
         Shoot us a request to open a Deja Brew cafe near you, use the form below
-        to send us a suggestion for opening a new cafe.</h2>
+        to send us a suggestion for opening a new cafe.
+      </h2>
       </p>
       <!---FORM IN HTML-->
-      <table
-        bgcolor="#FFF"
-        cellspacing="5"
-        cellpadding="5"
-        height="300"
-        width="30"
-      >
+      <table bgcolor="#FFF" cellspacing="5" cellpadding="5" height="300" width="30">
         <form method="post" height="30" width="30">
           <!---Autofocus to input field automatically get focus when the page loads-->
           <tr>
             <td>
-              <input
-                type="text"
-                size="25"
-                name="your_name"
-                autofocus
-                required
-                placeholder="Your Name"
-              />
+              <input type="text" size="25" name="your_name" autofocus required placeholder="Your Name" />
             </td>
             <td>
-              <input
-                type="email"
-                size="25"
-                name="email_id"
-                required
-                placeholder="Enter email"
-              />
+              <input type="email" size="25" name="email_id" required placeholder="Enter email" />
             </td>
           </tr>
           <tr>
             <td>
-              <input
-                type="text"
-                size="25"
-                name="co_name"
-                required
-                placeholder="Company/Organization"
-              />
+              <input type="text" size="25" name="co_name" required placeholder="Company/Organization" />
             </td>
             <td><textarea required placeholder="City"></textarea></td>
           </tr>
           <tr>
             <td>
-              <input
-                type="text"
-                size="25"
-                name="state"
-                required
-                placeholder="State"
-              />
+              <input type="text" size="25" name="state" required placeholder="State" />
             </td>
             <td><input type="text" required placeholder="Postcode" /></td>
           </tr>
           <tr>
             <td>
-              <input
-                type="text"
-                size="25"
-                name="inst_name"
-                autofocus
-                required
-                placeholder="Country"
-              />
+              <input type="text" size="25" name="inst_name" autofocus required placeholder="Country" />
             </td>
             <td>
-              <input
-                type="text"
-                size="25"
-                name="inst_name"
-                autofocus
-                required
-                placeholder="Telephone"
-              />
+              <input type="text" size="25" name="inst_name" autofocus required placeholder="Telephone" />
             </td>
           </tr>
           <tr>
             <td>
-              <input
-                type="text"
-                size="80"
-                textarea
-                rows="5"
-                cols="15"
-                required
-                placeholder="Why do you want us to open a Deja Brew outlet in your location?"
-              />
+              <input type="text" size="80" textarea rows="5" cols="15" required
+                placeholder="Why do you want us to open a Deja Brew outlet in your location?" />
             </td>
           </tr>
           <tr>
@@ -328,5 +293,7 @@
         </form>
       </table>
     </section>
+    <iframe src="/footer.html" id="footer-iframe" onload="iframeLoaded()" scrolling="no"></iframe>
   </body>
+
 </html>
