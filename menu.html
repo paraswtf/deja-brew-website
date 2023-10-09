@@ -16,7 +16,6 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/stylesheets/fonts.css">
         <link rel="stylesheet" href="/stylesheets/style.css">
-        <link rel="stylesheet" href="/stylesheets/navbar.css">
         <link rel="stylesheet" href="/stylesheets/footer.css">
         <!-- Stylesheets end -->
         <style>
@@ -124,6 +123,8 @@
                 background-color: var(--dark-brown);
             }
         </style>
+        <!-- Navbar created using js so that we don't have to write code again and again-->
+        <script src="/navbar.js" defer></script>
 
         <script defer>
             function buttonClick(button, src) {
@@ -138,14 +139,6 @@
     </head>
 
     <body class="light-pattern-bg">
-        <nav>
-            <a href="/"><img src="/assets/Logo.webp" class="navlovo" /></a>
-            <ul class="navlinks">
-                <li><a href="/" class="link-effect">Home</a></li>
-                <li><a href="/about" class="link-effect">About</a></li>
-                <li><a href="/menu" class="link-effect">Menu</a></li>
-                <li><a href="/locations" class="link-effect">Locations</a></li>
-        </nav>
         <div class="navspacer"></div>
         <div class="menu-head-container">
             <img src="/assets/food-icon.svg" alt="food-icon" class="menu-logo">
