@@ -1,7 +1,24 @@
-const page = window.location.search.slice(1).split("&").find(param=>param.startsWith("page")).split("=")[1];
-fetch("/api/menudata.json").then(res => res.json()).then(data => {
-    if(!data || !data[page] || !data[page].length) {
-        document.getElementById("items-list").innerHTML = `
+const page =
+	window.location.search &&
+	window.location.search.slice(1).split("&").length &&
+	window.location.search
+		.slice(1)
+		.split("&")
+		.find((param) => param.startsWith("page"))
+		.split("=")[1];
+
+const specialsIcon = `
+<div class="tooltip">
+    <img src="/assets/star-icon.svg" class="specials-img"/>
+    <span class="tooltiptext"><p>Bestseller</p></span>
+</div>
+`;
+
+fetch("/api/menudata.json")
+	.then((res) => res.json())
+	.then((data) => {
+		if (!data || !data[page] || !data[page].length) {
+			document.getElementById("items-list").innerHTML = `
         <div class="menu-card dark-pattern-bg">
             <img src="/assets/item404.png" class="menu-card-image">
             <div class="menu-item-details-box">
@@ -16,13 +33,15 @@ fetch("/api/menudata.json").then(res => res.json()).then(data => {
             <div>
                 <p class="price">&gt;-_-&lt;</p>
             </div>
-        </div>`
-    }
-    else document.getElementById("items-list").innerHTML = data[page].map(item => `
+        </div>`;
+		} else
+			document.getElementById("items-list").innerHTML = data[page]
+				.map(
+					(item) => `
         <div class="menu-card dark-pattern-bg">
             <img src="${item.image}" class="menu-card-image">
             <div class="menu-item-details-box">
-                <h2>${item.name} ${item.specials?`<img src="/assets/star-icon.svg" class="specials-img"/>`:''}</h2>
+                <h2>${item.name} ${item.specials ? specialsIcon : ""}</h2>
                 <p style="font-size: 2vw; color: var(--almost-white);">
                     ${item.description}
                 </p>
@@ -34,5 +53,7 @@ fetch("/api/menudata.json").then(res => res.json()).then(data => {
                 <p class="price">${item.price}</p>
             </div>
         </div>
-`).join("");
-});
+`
+				)
+				.join("");
+	});

@@ -334,3 +334,8 @@ hr {
 		transform: scale(1) rotate(4deg);
 	}
 }
+
+.spooktober {
+	height: 1.5vw;
+	width: 1.5vw;
+}

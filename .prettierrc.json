@@ -18,7 +18,5 @@
 	"trailingComma": "none",
 	"useTabs": true,
 	"embeddedLanguageFormatting": "auto",
-	"vueIndentScriptAndStyle": false,
-	"filepath": "/Users/parasdeshpande/Documents/GitHub/deja-brew-website/stylesheets/style.css",
-	"parser": "css"
+	"vueIndentScriptAndStyle": false
 }
