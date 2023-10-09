@@ -1,7 +1,7 @@
 const page = window.location.search.slice(1).split("&").find(param=>param.startsWith("page")).split("=")[1];
 fetch("/api/menudata.json").then(res => res.json()).then(data => {
-    if(!data || !data[page]) {
-        document.getElementById("pizzas-list").innerHTML = `
+    if(!data || !data[page] || !data[page].length) {
+        document.getElementById("items-list").innerHTML = `
         <div class="menu-card dark-pattern-bg">
             <img src="/assets/item404.png" class="menu-card-image">
             <div class="menu-item-details-box">
@@ -18,7 +18,7 @@ fetch("/api/menudata.json").then(res => res.json()).then(data => {
             </div>
         </div>`
     }
-    else document.getElementById("pizzas-list").innerHTML = data[page].map(item => `
+    else document.getElementById("items-list").innerHTML = data[page].map(item => `
         <div class="menu-card dark-pattern-bg">
             <img src="${item.image}" class="menu-card-image">
             <div class="menu-item-details-box">
@@ -27,7 +27,7 @@ fetch("/api/menudata.json").then(res => res.json()).then(data => {
                     ${item.description}
                 </p>
                 <p style="font-size: 2vw; color: var(--orange); margin-top:1vw;">
-                    Toppings: ${item.toppings.join(", ")}
+                    ${item.subtext}
                 </p>
             </div>
             <div>
