@@ -14,7 +14,7 @@ fetch("/api/menudata.json").then(res => res.json()).then(data => {
                 </p>
             </div>
             <div>
-                <p class="price">(.)(.)</p>
+                <p class="price">&gt;-_-&lt;</p>
             </div>
         </div>`
     }
