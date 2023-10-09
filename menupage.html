@@ -30,7 +30,7 @@
 
             .menu-card:hover {
                 scale: 1.05;
-                filter: drop-shadow(0px 0px 10px var(--lighter-brown));
+                filter: drop-shadow(0px 0px 10px var(--light-brown));
             }
 
             .menu-card-image {
@@ -60,6 +60,42 @@
 
             .specials-img {
                 height: 3vw;
+            }
+
+            /* Tooltip inspired by https://paraswtf.com/ */
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -3.75vw;
+                padding-inline: 2vw;
+            }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -1.4vw;
+                border-width: 5px;
+                border-style: solid;
+                border-color: black transparent transparent transparent;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
             }
         </style>
     </head>
