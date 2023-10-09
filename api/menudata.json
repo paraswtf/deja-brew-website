@@ -1,0 +1,351 @@
+{
+	"coffee": [
+		{
+			"name": "Deja Vu Espresso",
+			"description": "A bold double shot espresso of our house blend espresso, perfectly balanced for an intense flavor experience.",
+			"specials": false,
+			"subtext": "Strong",
+			"price": "₹320",
+			"image": ""
+		},
+		{
+			"name": "Velvet Mocha",
+			"description": "Rich,dark chocolate blended with our finest espresso,steamed milk and topped with whipped cream and cocoa dust.",
+			"specials": false,
+			"subtext": "Strong",
+			"price": "₹350",
+			"image": ""
+		},
+		{
+			"name": "Golden Latte",
+			"description": "A warming blend of turmeric ginger and our velvety steamed milk, topped with whipped cream and cocoa dust.",
+			"specials": false,
+			"subtext": "Light and warm",
+			"price": "₹360",
+			"image": ""
+		},
+		{
+			"name": "Caramel Macchiato",
+			"description": "A decadent concoction of velvety caramel syrup,espresso,steamed milk and a drizzle of caramel,finished with a caramelized sugar rim.",
+			"specials": false,
+			"subtext": "Light",
+			"price": "₹340",
+			"image": ""
+		},
+		{
+			"name": "Classic Coffee",
+			"description": "Our signature blend of freshly roasted coffee beans.",
+			"specials": false,
+			"subtext": "Light and warm",
+			"price": "₹200",
+			"image": ""
+		},
+		{
+			"name": "Mocha",
+			"description": "Rich chocolate mixed with espresso and steamed milk, topped with whipped cream.",
+			"specials": false,
+			"subtext": "Strong and warm",
+			"price": "₹210",
+			"image": ""
+		},
+		{
+			"name": "Cappuccino",
+			"description": "Espresso steamed milk and velvety foam top.",
+			"specials": false,
+			"subtext": "Strong and warm",
+			"price": "₹260",
+			"image": ""
+		}
+	],
+	"pizzas": [
+		{
+			"name": "Pepperoni",
+			"description": "The classic pizza, topped with tomato sauce, mozzarella cheese, and pepperoni.",
+			"specials": false,
+			"subtext": "pepperoni",
+			"price": "₹200",
+			"image": "/assets/pizzas/pepperroni.png"
+		},
+		{
+			"name": "Margherita",
+			"description": "A simple yet delicious pizza with tomato sauce, fresh mozzarella cheese, and basil leaves.",
+			"specials": false,
+			"subtext": "tomato sauce, mozzarella, basil",
+			"price": "₹180",
+			"image": "/assets/pizzas/margherita.png"
+		},
+		{
+			"name": "Vegetarian",
+			"description": "A medley of fresh vegetables including bell peppers, onions, mushrooms, and olives on tomato sauce and mozzarella cheese.",
+			"specials": false,
+			"subtext": "bell peppers, onions, mushrooms, olives, tomato sauce, mozzarella",
+			"price": "₹220",
+			"image": "/assets/pizzas/vegetarian.png"
+		},
+		{
+			"name": "BBQ Chicken",
+			"description": "Grilled chicken, red onions, and barbecue sauce on a bed of mozzarella and cheddar cheese.",
+			"specials": true,
+			"subtext": "grilled chicken, red onions, barbecue sauce, mozzarella, cheddar",
+			"price": "₹250",
+			"image": "/assets/pizzas/bbqchk.png"
+		},
+		{
+			"name": "Hawaiian",
+			"description": "A tropical delight with ham, pineapple chunks, and mozzarella cheese on tomato sauce.",
+			"specials": false,
+			"subtext": "ham, pineapple, tomato sauce, mozzarella",
+			"price": "₹210",
+			"image": "/assets/pizzas/hawaiian.png"
+		},
+		{
+			"name": "Mushroom Lovers",
+			"description": "A mushroom extravaganza with three types of mushrooms and mozzarella cheese on a creamy garlic sauce.",
+			"specials": true,
+			"subtext": "button mushrooms, shiitake mushrooms, cremini mushrooms, mozzarella, creamy garlic sauce",
+			"price": "₹230",
+			"image": "https://www.handletheheat.com/wp-content/uploads/2019/06/Mushroom-Pizza-SQUARE.jpg"
+		},
+		{
+			"name": "Supreme",
+			"description": "A hearty pizza loaded with pepperoni, sausage, bell peppers, onions, and olives on tomato sauce and mozzarella cheese.",
+			"specials": false,
+			"subtext": "pepperoni, sausage, bell peppers, onions, olives, tomato sauce, mozzarella",
+			"price": "₹240",
+			"image": "https://www.simplyrecipes.com/wp-content/uploads/2019/09/supreme-pizza-horiz-a-1800.jpg"
+		},
+		{
+			"name": "Pesto Chicken",
+			"description": "Grilled chicken, cherry tomatoes, and pesto sauce on a bed of mozzarella and parmesan cheese.",
+			"specials": false,
+			"subtext": "grilled chicken, cherry tomatoes, pesto sauce, mozzarella, parmesan",
+			"price": "₹230",
+			"image": "https://www.cookingclassy.com/wp-content/uploads/2018/09/pesto-chicken-pizza-21-600x900.jpg"
+		},
+		{
+			"name": "Buffalo Chicken",
+			"description": "Spicy buffalo sauce, grilled chicken, red onions, and mozzarella cheese.",
+			"specials": true,
+			"subtext": "buffalo sauce, grilled chicken, red onions, mozzarella",
+			"price": "₹240",
+			"image": "https://www.jessicagavin.com/wp-content/uploads/2019/08/buffalo-chicken-pizza-6-1200.jpg"
+		},
+		{
+			"name": "Four Cheese",
+			"description": "A blend of mozzarella, cheddar, parmesan, and feta cheese on a tomato sauce base.",
+			"specials": false,
+			"subtext": "mozzarella, cheddar, parmesan, feta, tomato sauce",
+			"price": "₹220",
+			"image": "https://www.simplyrecipes.com/wp-content/uploads/2019/09/four-cheese-pizza-horiz-a-1800.jpg"
+		}
+	],
+	"burgers": [
+		{
+			"name": " Classic Beef Burger",
+			"description": "Our classic beef burger is a timeless favorite. It features a juicy, seasoned beef patty topped with fresh lettuce, tomato, onion, and our special house sauce, served on a toasted bun.",
+			"specials": false,
+			"subtext": "beef",
+			"price": "₹200",
+			"image": " "
+		},
+		{
+			"name": "Veggie Delight Burger",
+			"description": "A delicious vegetarian option, our Veggie Delight Burger features a flavorful vegetable patty made from a blend of fresh vegetables and spices.",
+			"specials": false,
+			"subtext": " lettuce, tomato, onion, and mayo",
+			"price": "₹180",
+			"image": ""
+		},
+		{
+			"name": "Chicken Caesar Burger",
+			"description": "A twist on the classic Caesar salad, this burger includes a grilled chicken breast, crisp romaine lettuce, Parmesan cheese, and Caesar dressing, all on a toasted bun.",
+			"specials": false,
+			"subtext": " grilled chicken breast, crisp romaine lettuce, Parmesan cheese, and Caesar dressing",
+			"price": "₹220",
+			"image": ""
+		},
+		{
+			"name": "BBQ Bacon Burger",
+			"description": "For those who love smoky flavors, our BBQ Bacon Burger features a juicy beef patty, crispy bacon, cheddar cheese, onion rings, and BBQ sauce, all on a toasted bun.",
+			"specials": false,
+			"subtext": " juicy beef patty, crispy bacon, cheddar cheese, onion rings, and BBQ sauce",
+			"price": "₹240",
+			"image": ""
+		},
+		{
+			"name": "Spicy Chickpea Burger",
+			"description": " A spicy and flavorful option, our Spicy Chickpea Burger is made from a blend of chickpeas, spices, and herbs. Topped with lettuce, tomato, onion, and a spicy mayo, served on a soft bun.",
+			"specials": false,
+			"subtext": " lettuce, tomato, onion, and a spicy mayo",
+			"price": "₹190",
+			"image": ""
+		},
+		{
+			"name": " Mushroom Swiss Burger",
+			"description": "Indulge in the rich and earthy flavors of our Mushroom Swiss Burger. It features a beef patty, sautéed mushrooms, Swiss cheese, lettuce, and our special sauce, all on a toasted bun.",
+			"specials": false,
+			"subtext": "beef patty, sautéed mushrooms, Swiss cheese, lettuce, and our special sauce",
+			"price": "₹230",
+			"image": ""
+		},
+		{
+			"name": " Fish Fillet Burger",
+			"description": "A seafood delight, our Fish Fillet Burger includes a crispy breaded fish fillet, lettuce, tomato, and tartar sauce, served on a soft bun.",
+			"specials": false,
+			"subtext": "crispy breaded fish fillet, lettuce, tomato, and tartar sauce",
+			"price": "₹240",
+			"image": ""
+		}
+	],
+	"snacks": [
+		{
+			"name": " Classic Potato Wedges",
+			"description": "Crispy on the outside and soft on the inside, our Classic Potato Wedges are seasoned to perfection and served with a side of ketchup.",
+			"specials": false,
+			"subtext": "seasoned to perfection",
+			"price": "₹120",
+			"image": ""
+		},
+		{
+			"name": "Mozzarella Sticks",
+			"description": " Irresistible mozzarella sticks with a golden, crispy coating. Served with marinara sauce for dipping.",
+			"specials": false,
+			"subtext": "golden, crispy coating",
+			"price": "₹160",
+			"image": ""
+		},
+		{
+			"name": " Chicken Wings",
+			"description": "Juicy and flavorful chicken wings, available in your choice of sauces: BBQ, Buffalo, or Teriyaki. Served with celery sticks and ranch dressing.",
+			"specials": false,
+			"subtext": "choice of sauces: BBQ, Buffalo, or Teriyaki",
+			"price": "200",
+			"image": ""
+		},
+		{
+			"name": "Onion Rings",
+			"description": "Thick-cut onion rings, battered and deep-fried to a crispy golden brown. Served with a side of tangy dipping sauce.",
+			"specials": false,
+			"subtext": "deep-fried to a crispy golden brown",
+			"price": "₹140",
+			"image": ""
+		},
+
+		{
+			"name": "Nachos Supreme",
+			"description": "A generous portion of crispy tortilla chips smothered in melted cheese, jalapeños, sour cream, and salsa.",
+			"specials": false,
+			"subtext": "jalapeños, sour cream, and salsa",
+			"price": "₹180",
+			"image": ""
+		},
+		{
+			"name": "Bruschetta",
+			"description": "Toasted baguette slices topped with a savory mixture of diced tomatoes, fresh basil, garlic, and olive oil.",
+			"specials": false,
+			"subtext": "diced tomatoes, fresh basil, garlic, and olive oil",
+			"price": "₹150",
+			"image": ""
+		}
+	],
+	"desserts": [
+		{
+			"name": "Classic Chocolate Brownie",
+			"description": " A rich and fudgy chocolate brownie served warm with a scoop of vanilla ice cream and a drizzle of chocolate sauce.",
+			"specials": false,
+			"subtext": "vanilla ice cream and a drizzle of chocolate sauce",
+			"price": "₹150",
+			"image": " "
+		},
+		{
+			"name": "New York Cheesecake",
+			"description": "Creamy and indulgent cheesecake with a graham cracker crust, topped with a choice of berry compote or caramel sauce.",
+			"specials": false,
+			"subtext": "choice of berry compote or caramel sauce.",
+			"price": "₹180",
+			"image": ""
+		},
+		{
+			"name": "Molten Lava Cake",
+			"description": "A decadent chocolate lava cake with a gooey, molten center, served with a scoop of vanilla ice cream and a A decadent chocolate lava cake with a gooey, molten center, served with a scoop of vanilla ice cream and a dusting of powdered sugar.",
+			"specials": false,
+			"subtext": "dusting of powdered sugar",
+			"price": "₹170",
+			"image": ""
+		},
+		{
+			"name": "Tiramisu",
+			"description": "A classic Italian dessert featuring layers of coffee-soaked ladyfingers and mascarpone cheese, dusted with cocoa powder.",
+			"specials": false,
+			"subtext": "dusted with cocoa powder",
+			"price": "₹190",
+			"image": ""
+		},
+		{
+			"name": "Fruit Parfait",
+			"description": " A healthy and refreshing dessert made with layers of yogurt, granola, and a variety of fresh seasonal fruits.",
+			"specials": false,
+			"subtext": "variety of fresh seasonal fruits",
+			"price": "₹160",
+			"image": ""
+		},
+		{
+			"name": "Chocolate Mousse",
+			"description": " Silky and smooth chocolate mousse topped with whipped cream and chocolate shavings.",
+			"specials": false,
+			"subtext": "whipped cream and chocolate shavings",
+			"price": "₹160",
+			"image": ""
+		}
+	],
+	"drinks": [
+		{
+			"name": "Classic Chocolate Shake",
+			"description": "A creamy chocolate shake made with rich chocolate ice cream and milk, topped with whipped cream and a chocolate drizzle.",
+			"specials": false,
+			"subtext": "whipped cream and chocolate shavings",
+			"price": "₹120",
+			"image": ""
+		},
+		{
+			"name": "Vanilla Dream Shake",
+			"description": "A smooth and sweet vanilla shake made with vanilla ice cream and milk, topped with whipped cream and a cherry.",
+			"specials": false,
+			"subtext": "whipped cream and a cherry",
+			"price": "₹110",
+			"image": ""
+		},
+		{
+			"name": "Strawberry Bliss Shake",
+			"description": " A delightful strawberry shake made with real strawberries, vanilla ice cream, and milk, topped with whipped cream.",
+			"specials": false,
+			"subtext": "real strawberries, vanilla ice cream, and milk",
+			"price": "₹130",
+			"image": ""
+		},
+		{
+			"name": "Oreo Cookie Shake",
+			"description": "An indulgent shake featuring crushed Oreo cookies blended with vanilla ice cream and milk, topped with whipped cream and cookie crumbs.",
+			"specials": false,
+			"subtext": "whipped cream and cookie crumbs",
+			"price": "₹140",
+			"image": ""
+		},
+		{
+			"name": "Coffee Caramel Shake",
+			"description": " A caffeine kick and a caramel treat! This shake combines coffee, caramel, vanilla ice cream, and milk, topped with whipped cream.",
+			"specials": false,
+			"subtext": "coffee, caramel, vanilla ice cream",
+			"price": "₹150",
+			"image": ""
+		},
+		{
+			"name": "Banana Nutella Shake",
+			"description": " A luscious blend of ripe bananas and Nutella hazelnut spread with vanilla ice cream and milk, topped with whipped cream.",
+			"specials": false,
+			"subtext": "Nutella hazelnut spread with vanilla ice cream",
+			"price": "₹140",
+			"image": ""
+		}
+	]
+}

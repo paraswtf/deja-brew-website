@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/fonts.css">
+        <script src="/menupage.js" defer></script>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                margin: 5vw;
+                gap: 2vw;
+            }
+
+            .dark-bg {
+                background-color: var(--dark-brown);
+            }
+
+            .menu-card {
+                display: flex;
+                flex-direction: row;
+                border: 1px solid var(--lighter-brown);
+                border-radius: 1.5vw;
+                padding-block: 1.5vw;
+                padding-inline: 2vw;
+                cursor: pointer;
+                filter: none;
+            }
+
+            .menu-card:hover {
+                scale: 1.05;
+                filter: drop-shadow(0px 0px 10px var(--light-brown));
+            }
+
+            .menu-card-image {
+                height: 15vw;
+                width: 15vw;
+                border-radius: 1.2vw;
+                object-fit: cover;
+            }
+
+            .menu-item-details-box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-inline: 3vw;
+                color: var(--almost-white);
+            }
+
+            .price {
+                font-size: 2.5vw;
+                color: var(--almost-white);
+                width: max-content;
+            }
+
+            h2 {
+                margin-bottom: 1.5vw;
+            }
+
+            .specials-img {
+                height: 3vw;
+            }
+
+            /* Tooltip inspired by https://paraswtf.com/ */
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -3.75vw;
+                padding-inline: 2vw;
+            }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -1.4vw;
+                border-width: 5px;
+                border-style: solid;
+                border-color: black transparent transparent transparent;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+        </style>
+    </head>
+
+    <body class="dark-bg" id="items-list">
+        <div class="menu-card dark-pattern-bg">
+            <img src="assets/item-loading.gif" class="menu-card-image">
+            <div class="menu-item-details-box">
+                <h2>Loading data...</h2>
+                <p style="font-size: 2vw; color: var(--almost-white);">
+                    This shouldn't take long
+                </p>
+            </div>
+            <div>
+                <p class="price">:)</p>
+            </div>
+        </div>
+    </body>
+
+</html>
