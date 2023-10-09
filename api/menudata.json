@@ -1,0 +1,84 @@
+{
+    "pizzas":[
+        {
+            "name": "Pepperoni",
+            "description": "The classic pizza, topped with tomato sauce, mozzarella cheese, and pepperoni.",
+            "specials": false,
+            "toppings": ["pepperoni"],
+            "price": "₹200",
+            "image": "/assets/pizzas/pepperroni.png"
+        },
+        {
+            "name": "Margherita",
+            "description": "A simple yet delicious pizza with tomato sauce, fresh mozzarella cheese, and basil leaves.",
+            "specials": false,
+            "toppings": ["tomato sauce", "mozzarella", "basil"],
+            "price": "₹180",
+            "image": "/assets/pizzas/margherita.png"
+        },
+        {
+            "name": "Vegetarian",
+            "description": "A medley of fresh vegetables including bell peppers, onions, mushrooms, and olives on tomato sauce and mozzarella cheese.",
+            "specials": false,
+            "toppings": ["bell peppers", "onions", "mushrooms", "olives", "tomato sauce", "mozzarella"],
+            "price": "₹220",
+            "image": "/assets/pizzas/vegetarian.png"
+        },
+        {
+            "name": "BBQ Chicken",
+            "description": "Grilled chicken, red onions, and barbecue sauce on a bed of mozzarella and cheddar cheese.",
+            "specials": true,
+            "toppings": ["grilled chicken", "red onions", "barbecue sauce", "mozzarella", "cheddar"],
+            "price": "₹250",
+            "image": "/assets/pizzas/bbqchk.png"
+        },
+        {
+            "name": "Hawaiian",
+            "description": "A tropical delight with ham, pineapple chunks, and mozzarella cheese on tomato sauce.",
+            "specials": false,
+            "toppings": ["ham", "pineapple", "tomato sauce", "mozzarella"],
+            "price": "₹210",
+            "image": "/assets/pizzas/hawaiian.png"
+        },
+        {
+            "name": "Mushroom Lovers",
+            "description": "A mushroom extravaganza with three types of mushrooms and mozzarella cheese on a creamy garlic sauce.",
+            "specials": true,
+            "toppings": ["button mushrooms", "shiitake mushrooms", "cremini mushrooms", "mozzarella", "creamy garlic sauce"],
+            "price": "₹230",
+            "image": "https://www.handletheheat.com/wp-content/uploads/2019/06/Mushroom-Pizza-SQUARE.jpg"
+        },
+        {
+            "name": "Supreme",
+            "description": "A hearty pizza loaded with pepperoni, sausage, bell peppers, onions, and olives on tomato sauce and mozzarella cheese.",
+            "specials": false,
+            "toppings": ["pepperoni", "sausage", "bell peppers", "onions", "olives", "tomato sauce", "mozzarella"],
+            "price": "₹240",
+            "image": "https://www.simplyrecipes.com/wp-content/uploads/2019/09/supreme-pizza-horiz-a-1800.jpg"
+        },
+        {
+            "name": "Pesto Chicken",
+            "description": "Grilled chicken, cherry tomatoes, and pesto sauce on a bed of mozzarella and parmesan cheese.",
+            "specials": false,
+            "toppings": ["grilled chicken", "cherry tomatoes", "pesto sauce", "mozzarella", "parmesan"],
+            "price": "₹230",
+            "image": "https://www.cookingclassy.com/wp-content/uploads/2018/09/pesto-chicken-pizza-21-600x900.jpg"
+        },
+        {
+            "name": "Buffalo Chicken",
+            "description": "Spicy buffalo sauce, grilled chicken, red onions, and mozzarella cheese.",
+            "specials": true,
+            "toppings": ["buffalo sauce", "grilled chicken", "red onions", "mozzarella"],
+            "price": "₹240",
+            "image": "https://www.jessicagavin.com/wp-content/uploads/2019/08/buffalo-chicken-pizza-6-1200.jpg"
+        },
+        {
+            "name": "Four Cheese",
+            "description": "A blend of mozzarella, cheddar, parmesan, and feta cheese on a tomato sauce base.",
+            "specials": false,
+            "toppings": ["mozzarella", "cheddar", "parmesan", "feta", "tomato sauce"],
+            "price": "₹220",
+            "image": "https://www.simplyrecipes.com/wp-content/uploads/2019/09/four-cheese-pizza-horiz-a-1800.jpg"
+        }
+    ]
+}

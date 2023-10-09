@@ -4,9 +4,14 @@
     <head>
         <link rel="stylesheet" href="/stylesheets/style.css">
         <link rel="stylesheet" href="/stylesheets/fonts.css">
+        <script src="/menudata.js"></script>
+        <script src="/menupage.js" defer></script>
         <style>
             body {
+                display: flex;
+                flex-direction: column;
                 margin: 5vw;
+                gap: 2vw;
             }
 
             .dark-bg {
@@ -20,6 +25,13 @@
                 border-radius: 1.5vw;
                 padding-block: 1.5vw;
                 padding-inline: 2vw;
+                cursor: pointer;
+                filter: none;
+            }
+
+            .menu-card:hover {
+                scale: 1.05;
+                filter: drop-shadow(0px 0px 10px var(--lighter-brown));
             }
 
             .menu-card-image {
@@ -45,10 +57,14 @@
             h2 {
                 margin-bottom: 1.5vw;
             }
+
+            .specials-img {
+                height: 3vw;
+            }
         </style>
     </head>
 
-    <body class="dark-bg">
+    <body class="dark-bg" id="pizzas-list">
         <div class="menu-card dark-pattern-bg">
             <img src="assets/sfpizza.jpg" class="menu-card-image">
             <div class="menu-item-details-box">
@@ -61,7 +77,6 @@
             <div>
                 <p class="price">₹500/₹350</p>
             </div>
-            <!-- <img src="/assets/Hero Image.png" class="menu-card-image"> -->
         </div>
     </body>
 

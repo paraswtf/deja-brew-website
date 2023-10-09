@@ -51,7 +51,8 @@
             }
 
             .button:hover,
-            .button-clicked {
+            .button-clicked,
+            .button:active {
                 background-color: var(--dark-brown);
                 color: var(--white);
             }
@@ -112,7 +113,6 @@
 
         <script>
             function setIframeSrc(src) {
-                console.log(src);
                 document.querySelector(".iframe-container iframe").src = src;
             }
         </script>
@@ -134,27 +134,27 @@
         </div>
         <div class="menu-section">
             <div class="buttons-group">
-                <div class="button" onclick="setIframeSrc('/coffee.html')">
+                <div class="button" onclick="setIframeSrc('/menupage.html?page=coffee')">
                     <img src="/assets/coffee-icon.svg" alt="coffee icon" class="button-icon">
                     <h3 class="button-text">Coffee</h3>
                 </div>
-                <div class="button" onclick="setIframeSrc('/pizzas.html')">
+                <div class="button" onclick="setIframeSrc('/menupage.html?page=pizzas')">
                     <img src="/assets/pizzas-icon.svg" alt="pizzas icon" class="button-icon">
                     <h3 class="button-text">Pizzas</h3>
                 </div>
-                <div class="button" onclick="setIframeSrc('/burgers.html')">
+                <div class="button" onclick="setIframeSrc('/menupage.html?page=burgers')">
                     <img src="/assets/burgers-icon.svg" alt="burgers icon" class="button-icon">
                     <h3 class="button-text">Burgers</h3>
                 </div>
-                <div class="button" onclick="setIframeSrc('/snacks.html')">
+                <div class="button" onclick="setIframeSrc('/menupage.html?page=snacks')">
                     <img src="/assets/snacks-icon.svg" alt="snacks icon" class="button-icon">
                     <h3 class="button-text">Snacks</h3>
                 </div>
-                <div class="button" onclick="setIframeSrc('/desserts.html')">
+                <div class="button" onclick="setIframeSrc('/menupage.html?page=desserts')">
                     <img src="/assets/dessert-icon.svg" alt="desserts icon" class="button-icon">
                     <h3 class="button-text">Desserts</h3>
                 </div>
-                <butt class="button" onclick="setIframeSrc('/drinks.html')">
+                <butt class="button" onclick="setIframeSrc('/menupage.html?page=drinks')">
                     <img src="/assets/drinks-icon.svg" alt="drinks icon" class="button-icon">
                     <h3 class="button-text">Drinks</h3>
                 </butt>
