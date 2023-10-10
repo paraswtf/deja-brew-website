@@ -104,7 +104,7 @@
 			"specials": true,
 			"subtext": "button mushrooms, shiitake mushrooms, cremini mushrooms, mozzarella, creamy garlic sauce",
 			"price": "₹230",
-			"image": "https://www.handletheheat.com/wp-content/uploads/2019/06/Mushroom-Pizza-SQUARE.jpg"
+			"image": ""
 		},
 		{
 			"name": "Supreme",
@@ -112,7 +112,7 @@
 			"specials": false,
 			"subtext": "pepperoni, sausage, bell peppers, onions, olives, tomato sauce, mozzarella",
 			"price": "₹240",
-			"image": "https://www.simplyrecipes.com/wp-content/uploads/2019/09/supreme-pizza-horiz-a-1800.jpg"
+			"image": ""
 		},
 		{
 			"name": "Pesto Chicken",
@@ -120,7 +120,7 @@
 			"specials": false,
 			"subtext": "grilled chicken, cherry tomatoes, pesto sauce, mozzarella, parmesan",
 			"price": "₹230",
-			"image": "https://www.cookingclassy.com/wp-content/uploads/2018/09/pesto-chicken-pizza-21-600x900.jpg"
+			"image": ""
 		},
 		{
 			"name": "Buffalo Chicken",
@@ -128,7 +128,7 @@
 			"specials": true,
 			"subtext": "buffalo sauce, grilled chicken, red onions, mozzarella",
 			"price": "₹240",
-			"image": "https://www.jessicagavin.com/wp-content/uploads/2019/08/buffalo-chicken-pizza-6-1200.jpg"
+			"image": ""
 		},
 		{
 			"name": "Four Cheese",
@@ -136,7 +136,7 @@
 			"specials": false,
 			"subtext": "mozzarella, cheddar, parmesan, feta, tomato sauce",
 			"price": "₹220",
-			"image": "https://www.simplyrecipes.com/wp-content/uploads/2019/09/four-cheese-pizza-horiz-a-1800.jpg"
+			"image": ""
 		}
 	],
 	"burgers": [
@@ -146,7 +146,7 @@
 			"specials": false,
 			"subtext": "beef",
 			"price": "₹200",
-			"image": " "
+			"image": ""
 		},
 		{
 			"name": "Veggie Delight Burger",
@@ -255,7 +255,7 @@
 			"specials": false,
 			"subtext": "vanilla ice cream and a drizzle of chocolate sauce",
 			"price": "₹150",
-			"image": " "
+			"image": ""
 		},
 		{
 			"name": "New York Cheesecake",

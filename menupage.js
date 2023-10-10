@@ -39,7 +39,7 @@ fetch("/api/menudata.json")
 				.map(
 					(item) => `
         <div class="menu-card dark-pattern-bg">
-            <img src="${item.image}" class="menu-card-image">
+            <img src="${item.image || "/assets/item404.png"}" class="menu-card-image">
             <div class="menu-item-details-box">
                 <h2>${item.name} ${item.specials ? specialsIcon : ""}</h2>
                 <p style="font-size: 2vw; color: var(--almost-white);">
