@@ -38,7 +38,9 @@
 
       .search-container {
         display: flex;
+        width: 700px;
         flex-direction: row;
+        margin-inline: auto;
       }
 
       body {
@@ -63,6 +65,7 @@
         border-radius: 30px;
         background: var(--Almost-White, #d9d9d9);
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        
       }
 
       .search-txt {
@@ -78,6 +81,8 @@
         flex-direction: row;
         text-align: left;
         justify-content: space-between;
+        width:900px;
+        margin-inline: auto;
       }
       .Address2 {
         border-style: dotted;
@@ -85,6 +90,8 @@
         flex-direction: row;
         text-align: left;
         justify-content: space-between;
+        width:900px;
+        margin-inline: auto;
       }
       .Address3 {
         border-style: dotted;
@@ -92,13 +99,17 @@
         flex-direction: row;
         text-align: left;
         justify-content: space-between;
+        width:900px;
+        margin-inline: auto;
       }
       .Address4 {
         border-style: dotted;
+        width:900px;
         display: flex;
         flex-direction: row;
         text-align: left;
         justify-content: space-between;
+        margin-inline: auto;
       }
       div #text1 {
         display: flex;
@@ -161,6 +172,9 @@
         height: 150px;
         flex-shrink: 0;
       }
+      iframe {
+       background-color: var(--dark-brown);
+       }
       
     </style>
   </head>
@@ -172,12 +186,12 @@
           <br>
           <img src="icons/location-sign-svgrepo-com 1.png">
           <h1 class="Location-left" id="first">
-            <b>Find your perfect cup of coffee</b>
+            <b><u>Find your perfect cup of coffee</u></b>
           </h1>
         </div>
         <div class="Locationheading2">
           <h1 class="Location-right" id="second">
-            <b>Deja Brew outlets near you...</b>
+            <b><u>Deja Brew outlets near you...</u></b>
             <br>
           </h1>
           <marquee behaviour="scroll" direction="left" scroll amount="10">
@@ -188,12 +202,12 @@
       <br>
       <div class="search-container">
         <input type="text" class="search-txt" height="100%" >
-        <div class="searchicon"><img src="icons/search.png" align="center" ></div>
+        <div class="searchicon"><img src="icons/search.png" ></div>
       </div>
       <br>
       <div class="Address1">
         <div class="text1">
-          <h3 class="add">Gokhlenagar</h3>
+          <h3 class="add"><i><u>Gokhlenagar</u></i></h3>
           <h4 class="add">Open from 6:00am-10:00pm</h4>
           <h5 class="add">Plot no.56, Behind J.W.Marriott</h5>
         </div>
@@ -202,7 +216,7 @@
       <br>
       <div class="Address2">
         <div class="text2">
-          <h3 class="add1">Shiivajinagar</h3>
+          <h3 class="add1"><i><u>Shiivajinagar</u></i></h3>
           <h4 class="add1">Open from 6:00am-10:00pm</h4>
           <h5 class="add1">Sector-7, Junior high</h5>
         </div>
@@ -211,7 +225,7 @@
       <br>
       <div class="Address3">
         <div class="text3">
-          <h3 class="add2">Koregaon Park</h3>
+          <h3 class="add2"><i><u>Koregaon Park</u></i></h3>
           <h4 class="add2">Open from 6:00am-10:00pm</h4>
           <h5 class="add2">Near Waters Club</h5>
         </div>
@@ -220,7 +234,7 @@
       <br>
       <div class="Address4">
         <div class="text4">
-          <h3 class="add3">Vimannagar</h3>
+          <h3 class="add3"><i><u>Vimannagar</u></i></h3>
           <h4 class="add3">Open from 6:00am-10:00pm</h4>
           <h5 class="add3">Plot no.99, any park</h5>
         </div>
@@ -236,12 +250,12 @@
       <!---FORM IN HTML-->
       <table
         bgcolor="#FFF"
-        cellspacing="5"
-        cellpadding="5"
+        cellspacing="10px"
+        cellpadding="5px"
         height="300"
-        width="30"
+        width="300px"
       >
-        <form method="post" height="30" width="30">
+        <form method="post" height="30">
           <!---Autofocus to input field automatically get focus when the page loads-->
           <tr>
             <td>
@@ -325,11 +339,14 @@
           </tr>
           <tr>
             <td>
-              Give me a call back...
+              <input type="submit">
             </td>
           </tr>
+
         </form>
       </table>
+      <iframe src="/footer.html" id="footer-iframe" onload="iframeLoaded()" scrolling="no"></iframe>
     </section>
+   
   </body>
 </html>
