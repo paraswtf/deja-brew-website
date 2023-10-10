@@ -335,6 +335,11 @@
        align-self: stretch;
        }
        
+       iframe {
+       background-color: var(--dark-brown);
+       }
+       
+       
        
     </style>
 </head>
@@ -436,9 +441,7 @@
             <div class="FillForm-Header" id="twentytwo">Fill out the form below and we’ll reach out to you.
             </div><br><br><br>
         </div>
-        <div class="Enquiry Form" align="center"><b>Enquiry Form</b>
-            
-        </div>
+        
         <!---FORM IN HTML-->
         <table
         bgcolor="#FFF"
@@ -448,14 +451,16 @@
         width="30">
             <form method="post" height="30" width="30">
             <!---Autofocus to input field automatically get focus when the page loads-->
+            <th colspan="2">Enquiry Form</th></div>
             <tr><td><input type="text"size="25"name="your_name"autofocus required placeholder="Your Name"></td><td><input type="email"size="25"name="email_id"required placeholder="E-mail"></td></tr>
             <tr><td><input type="text"size="25"name="co_name"required placeholder="Company/Organization"></td><td><textarea required placeholder="City"></textarea></td></tr>
             <tr><td><inputtype="text" size="25"name="state"required placeholder="State"></td><td><input type="text" required placeholder="Postcode" /></td></tr>
             <tr><td><input type="text"size="25"name="inst_name"autofocus required placeholder="Country"></td><td><input type="text"size="25"name="inst_name"autofocus required placeholder="Telephone"></td></tr>
             <tr><td><input type="text"size="80"textarearows="5"cols="15"required placeholder="Why do you want to  become a Deja Brew Franchisee?"></td></tr>
-            <tr><td>Give me a call back...</td></tr>
+            <tr><td><input type="submit"></td></tr>
             </form>
         </table>
+        <iframe src="/footer.html" id="footer-iframe" onload="iframeLoaded()" scrolling="no"></iframe>
 
 
 
