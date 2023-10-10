@@ -2,14 +2,256 @@
 <html lang="en">
 
     <head>
+        <!-- <link rel="stylesheet" href="style.css"> -->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
 
-    <frameset rows="200, *">
-        <frame src="/nav.html"></frame>
-        <frame src="/index.html"></frame>
-    </frameset>
+    <body>
+        <style contenteditable font: optional;>
+            style {
+                display: block;
+                color: #000;
+                background-color: #fff;
+                width: 1200px;
+                margin: 100px;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px #00000033;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #000;
+                color: #fff;
+                font-family: sans-serif;
+                font-size: 1.5rem;
+                margin: -0.5;
+                padding: 0;
+
+                --s: 100px;
+                /* control the size */
+                --c1: #F8B195;
+                --c2: #355C7D;
+
+                --_g:
+                    var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%, var(--c1) 36% 44%,
+                    var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%, var(--c1) 76% 84%, var(--c2) 86% 94%;
+                background:
+                    radial-gradient(100% 100% at 100% 0, var(--c1) 4%, var(--_g), #0008 96%, #0000),
+                    radial-gradient(100% 100% at 0 100%, #0000, #0008 4%, var(--_g), var(--c1) 96%) var(--c1);
+                animation: infinite motion 10s linear;
+                background-size: var(--s) var(--s);
+                margin: 0;
+
+                /* background: url("https://img.freepik.com/premium-vector/abstract-seamless-pattern-background-with-artistic-style_7505-1600.jpg"); */
+            }
+
+            @keyframes motion {
+                0% {
+                    background-position: 0 0;
+                }
+
+                100% {
+                    background-position: 100px 100px;
+                }
+            }
+
+            @keyframes motion2 {
+                0% {
+                    background-position: 50px 25px;
+                }
+
+                100% {
+                    background-position: 150px 125px;
+                }
+            }
+
+            @keyframes rotate {
+                100% {
+                    transform: rotate(1turn);
+                }
+            }
+
+            .container {
+                z-index: 2;
+                overflow: hidden;
+                position: relative;
+                background-color: #f1f1f1aa;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 2rem;
+                border-radius: 20px;
+                width: 50%;
+                border: 2px solid #00e5ff;
+                filter: drop-shadow(0 0 20px #121212);
+                backdrop-filter: blur(5px);
+            }
+
+            @keyframes rotate {
+                100% {
+                    transform: rotate(1turn);
+                }
+            }
+
+            .container {
+                position: relative;
+                z-index: 0;
+                margin: 20px;
+                border-radius: 10px;
+                overflow: hidden;
+                padding: 2rem;
+                outline: #ffffff28 dashed 2px;
+                outline-offset: 10px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: -2;
+                    left: -50%;
+                    top: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background-image: conic-gradient(transparent, rgb(255, 112, 169), transparent 30%);
+                    animation: rotate 8s linear infinite;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    left: 6px;
+                    top: 6px;
+                    width: calc(100% - 12px);
+                    height: calc(100% - 12px);
+                    --s: 100px;
+                    /* control the size */
+                    --c1: hsl(17, 88%, 85%);
+                    --c2: hsl(208, 40%, 65%);
+
+                    --_g:
+                        var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%, var(--c1) 36% 44%,
+                        var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%, var(--c1) 76% 84%, var(--c2) 86% 94%;
+                    background:
+                        radial-gradient(100% 100% at 100% 0, var(--c1) 4%, var(--_g), #0008 96%, #0000),
+                        radial-gradient(100% 100% at 0 100%, #0000, #0008 4%, var(--_g), var(--c1) 96%) var(--c1);
+                    animation: infinite motion2 10s linear;
+                    background-size: var(--s) var(--s);
+                    background-color: #ffffff66;
+                    filter: blur(5px);
+                    border-radius: 5px;
+                }
+            }
+
+            img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2rem auto;
+                width: 400px;
+                height: 200px;
+                object-fit: cover;
+                object-position: 25% 50%;
+                border-radius: 10px;
+                filter: contrast(1.2) brightness(1.2) saturate(1.2);
+                mix-blend-mode: multiply;
+                opacity: 0.8;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                background-color: #00000000;
+            }
+
+            img:hover {
+                opacity: 1;
+                scale: 1.02;
+                filter: contrast(1.2) brightness(1.2) saturate(0.6) invert(1);
+            }
+
+            p,
+            h1 {
+                color: #191919;
+                text-shadow: hsl(300, 39%, 61%) 2px 2px 0px;
+                transition: all 0.2s ease-in-out;
+            }
+
+            p:hover,
+            h1:hover,
+            a:hover {
+                color: #F8B195;
+                text-shadow: hsl(300, 39%, 61%) 4px 4px 0px;
+                transform: translate(0, -2px);
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            a {
+                color: #355C7D;
+                text-decoration: none;
+            }
+
+            ol {
+                padding: auto;
+                margin: auto;
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+                list-style: square outside;
+            }
+
+            ol>li {
+                color: #00000066;
+                font-size: medium;
+                width: fit-content;
+            }
+
+            .page {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <div class="page">
+            <div class="container">
+                <h1>UH OH!! <br> A wild 404 appeared.</h1>
+                <p>Our librarian cats seem a bit lost...</p>
+                <img src="https://media4.giphy.com/media/AkKt3mf7vLePnseiny/giphy.gif?cid=ecf05e47hht7b06oi46plydd8td28txi3hvcjvsvj9p6nbnm&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                    alt="Cat running">
+                <div>
+                    <p>
+                        Meeowrrrrr!
+                    </p>
+                </div>
+                <a href="/">&lt; Take me back to home... /&gt;</a>
+                <div class="methods">
+                    <ol>
+                        <li>Check the URL for typos</li>
+                        <li>Go back to your previous page</li>
+                        <li>Try searching for what you need</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="container">
+                <p align="justify">
+                    Cats have very sweet features. It has two beautiful eyes, adorably tiny paws, sharp claws, and two
+                    perky ears which are very sensitive to sounds. It has a tiny body covered with smooth fur and it has
+                    a furry tail as well. Cats have an adorable face with a tiny nose, a big mouth and a few whiskers
+                    under its nose.
+                </p>
+            </div>
+        </div>
+    </body>
 
 </html>

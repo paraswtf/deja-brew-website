@@ -17,6 +17,10 @@
 	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -58,6 +62,7 @@ body {
 }
 
 iframe {
+	width: 100vw;
 	border: none;
 }
 
