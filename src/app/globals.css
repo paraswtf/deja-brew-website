@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* colors  */
+  --white: #c25050;
+  --almost-white: #d9d9d9;
+  --blue: #009ded;
+  --orange: #d08875;
+  --light-brown: #a38c77;
+  --brown: #645443;
+  --dark-brown: #433839;
+  --almost-black: #1e1e1e;
+  --black: #000000;
+
+  /* animations and transitions */
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+* {
+  box-sizing: border-box;
+}
