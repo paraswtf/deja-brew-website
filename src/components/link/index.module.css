@@ -30,3 +30,15 @@
   border-radius: 200px;
   transition: 0.5s;
 }
+.navlink.light {
+  color: var(--almost-white);
+  &:hover {
+    color: var(--blue);
+    outline: 0;
+
+    &:after {
+      width: 100%;
+      background-color: var(--blue);
+    }
+  }
+}

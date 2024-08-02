@@ -4,11 +4,12 @@ import NavLink from "../link";
 import styles from "./index.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import { joinIf } from "@/utils";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className={styles.cont}>
+    <nav tabIndex={0} className={styles.cont} onBlur={() => setOpen(false)}>
       <div className={styles.navbar}>
         <Link href="/">
           <Image
@@ -16,6 +17,7 @@ function NavBar() {
             width={90}
             height={90}
             className={styles.logo}
+            alt="logo.png"
           />
         </Link>
         <ul className={styles.navlinks}>
@@ -42,9 +44,7 @@ function NavBar() {
           <div
             className={open ? styles.burg2 + " " + styles.active : styles.burg2}
           ></div>
-          <div
-            className={open ? styles.burg3 + " " + styles.active : styles.burg3}
-          ></div>
+          <div className={joinIf(open, styles.burg3, styles.active)}></div>
         </div>
       </div>
 

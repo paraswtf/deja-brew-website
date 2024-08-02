@@ -20,3 +20,11 @@ body {
 * {
   box-sizing: border-box;
 }
+.bigboody {
+  margin-top: 150px;
+}
+@media (max-width: 768px) {
+  .bigboody {
+    margin-top: 114px;
+  }
+}
