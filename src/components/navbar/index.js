@@ -17,7 +17,7 @@ function NavBar() {
             width={90}
             height={90}
             className={styles.logo}
-            alt="logo.png"
+            alt="Deja Brew Logo"
           />
         </Link>
         <ul className={styles.navlinks}>
