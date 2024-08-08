@@ -24,13 +24,14 @@ function Footer() {
             width={150}
             height={150}
             className={styles.logo}
-            alt="logo.png"
+            alt="Deja Brew Logo"
           ></Image>
           <div className={styles.txtinf}>
             <span className={styles.txttitle}>Deja Brew</span>
             <span className={styles.txtdesc + " " + david.className}>
-              Step into a world where coffee isn&#39;t just a beverage,but a
-              journey that speaks of home.
+              {
+                "Step into a world where coffee isn't just a beverage,but a journey that speaks of home."
+              }
             </span>
             <span className={styles.icon}>
               <a>
@@ -38,7 +39,7 @@ function Footer() {
                   src="/icons/insta-icon.svg"
                   height={15}
                   width={15}
-                  alt="insta-icon.svg"
+                  alt="Instagram Icon"
                 />
               </a>
               <a>
@@ -46,7 +47,7 @@ function Footer() {
                   src="/icons/linkdin-icon.svg"
                   height={15}
                   width={15}
-                  alt="linkdin-icon.svg"
+                  alt="LinkedIn Icon"
                 />
               </a>
               <a>
@@ -54,7 +55,7 @@ function Footer() {
                   src="/icons/x-icon.svg"
                   height={15}
                   width={15}
-                  alt="x-icon.svg"
+                  alt="X Icon"
                 />
               </a>
             </span>
