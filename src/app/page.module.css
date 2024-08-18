@@ -28,30 +28,38 @@
   font-size: 4vw;
   color: var(--light-brown);
 }
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page > section {
+  width: 85%;
+}
 .clouds {
   /* width: 100vw; */
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: -9%;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  margin-top: -12%;
   margin-bottom: -8%;
   /* z-index: -100; */
 }
 
 .cloudleft {
   /* z-index: -100; */
-  margin-left: -10%;
-  width: 55%;
+  margin-left: -20%;
+  width: 70%;
   /* width: 741px; */
   height: auto;
   /* animation: motion 6s infinite ease-in-out; */
 }
 
 .cloudright {
-  margin-right: -10%;
-  width: 55%;
+  margin-right: -20%;
+  width: 70%;
   /* width: 741px; */
   height: auto;
   /* animation: motion 5s infinite ease-in-out; */
@@ -60,7 +68,7 @@
   /* z-index: -1; */
   /* left: 50%; */
   width: 100%;
-  bottom: 4%;
+
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -72,7 +80,7 @@
   cursor: pointer;
 }
 .arrows {
-  width: 6vw;
+  width: 5vw;
 }
 .heromobile {
   display: none;
@@ -95,7 +103,46 @@
     transform: translate(0, 0);
   }
 }
+.dashedline {
+  border: none;
+  height: 2px;
+  background: var(--light-brown);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--light-brown),
+    var(--light-brown) 15px,
+    transparent 6px,
+    transparent 24px
+  );
+}
+
+.infocardcont > span {
+  font-size: var(--heading2);
+  color: var(--dark-brown);
+  text-align: center;
+}
+.infocardcont > span {
+  margin-bottom: 75px;
+}
+.infocardcont {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
 @media (max-width: 768px) {
+  .infocardcont > span {
+    font-size: var(--heading2mob);
+  }
+  .infocardcont {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  .infocardcont > span {
+    margin-bottom: 24px;
+  }
   .hero {
     display: none;
   }
@@ -122,21 +169,18 @@
   .cloudleft {
     /* width: 1000vw; */
     width: auto;
-    height: 70vh;
-    margin-left: -180%;
-    margin-top: -45%;
+    height: 70vw;
+    margin-left: -60%;
+    /* margin-top: -45%; */
   }
   .cloudright {
-    /* margin-right: -50%; */
+    margin-right: -200%;
     width: auto;
-    margin-top: -45%;
-    height: 70vh;
+    /* margin-top: -45%; */
+    height: 70vw;
     width: auto;
   }
   .arrows {
     width: 20vw;
-  }
-  .arrowcontainer {
-    bottom: 15%;
   }
 }

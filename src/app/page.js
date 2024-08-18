@@ -2,16 +2,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
+import { David_Libre } from "next/font/google";
+import BubbleSection from "@/sections/bubble-section";
+import JourneySection from "@/sections/journey-section";
+import WhySection from "@/sections/why-section";
+import Experience from "@/sections/experience-section";
+import Review from "@/sections/review";
 
+const david = David_Libre({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
 export default function Home() {
-  // const a = ["paras", "gey"];
-  // const [v, sv] = useState(0);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     if (v == a.length - 1) sv(0);
-  //     else sv(v + 1);
-  //   }, 1000);
-  // }, [v]);
   return (
     <>
       <br></br>
@@ -39,8 +42,8 @@ export default function Home() {
         <div className={styles.heromobile}>
           <Image
             src="/hero-image-mobile.png"
-            height={252}
-            width={330}
+            height={280}
+            width={345}
             className={styles.heroimagemobile}
             alt="hero-image.png"
           ></Image>
@@ -100,54 +103,33 @@ export default function Home() {
           ></Image>
         </div>
       </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h1>das</h1>
+      <section className={styles.page}>
+        <section>
+          <JourneySection></JourneySection>
+          <hr className={styles.dashedline}></hr>
+          <WhySection></WhySection>
+          <hr className={styles.dashedline}></hr>
+          <Experience></Experience>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <BubbleSection></BubbleSection>
+          </div>
+          <Review></Review>
+          <p
+            className={david.className}
+            style={{ textAlign: "center", marginBottom: 150, fontSize: 24 }}
+          >
+            Share your feedback with us by mentioning{" "}
+            <span style={{ margin: 0, color: "#009DED" }}>@DejaBrewCafe</span>{" "}
+            on X (formerly Twitter)
+          </p>
+        </section>
+      </section>
     </>
   );
 }

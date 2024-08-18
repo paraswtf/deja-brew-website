@@ -38,34 +38,26 @@ function NavBar() {
           className={styles.hamburger}
           onClick={() => setOpen((prev) => !prev)}
         >
-          <div
-            className={open ? styles.burg1 + " " + styles.active : styles.burg1}
-          ></div>
-          <div
-            className={open ? styles.burg2 + " " + styles.active : styles.burg2}
-          ></div>
+          <div className={joinIf(open, styles.burg1, styles.active)}></div>
+          <div className={joinIf(open, styles.burg2, styles.active)}></div>
           <div className={joinIf(open, styles.burg3, styles.active)}></div>
         </div>
       </div>
 
-      <ul
-        className={
-          open ? styles.navlinksvert + " " + styles.active : styles.navlinksvert
-        }
-      >
-        <li className={open ? styles.li + " " + styles.active : styles.li}>
+      <ul className={joinIf(open, styles.navlinksvert, styles.active)}>
+        <li className={joinIf(open, styles.li, styles.active)}>
           <NavLink href="https://www.youtube.com/">Home</NavLink>
         </li>
-        <li className={open ? styles.li + " " + styles.active : styles.li}>
+        <li className={joinIf(open, styles.li, styles.active)}>
           <NavLink href="https://www.youtube.com/">About</NavLink>
         </li>
-        <li className={open ? styles.li + " " + styles.active : styles.li}>
+        <li className={joinIf(open, styles.li, styles.active)}>
           <NavLink href="https://www.youtube.com/">Menu</NavLink>
         </li>
-        <li className={open ? styles.li + " " + styles.active : styles.li}>
+        <li className={joinIf(open, styles.li, styles.active)}>
           <NavLink href="https://www.youtube.com/">Location</NavLink>
         </li>
-        <hr className={open ? styles.hr + " " + styles.active : styles.hr}></hr>
+        <hr className={joinIf(open, styles.hr, styles.active)}></hr>
       </ul>
     </nav>
   );
