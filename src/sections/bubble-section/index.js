@@ -12,15 +12,14 @@ function BubbleSection() {
     <div className={styles.bubblesection}>
       <span>Our Comitment to Sustainability</span>
       <p className={styles.p + " " + david.className}>
-        We take our responsibility to the planet seriously. From supporting
-        eco-conscious farming practices to minimizing our environmental
-        footprint, sustainability is woven into the fabric of our brand. With
-        every cup, you can sip knowing you're part of a movement towards a
-        greener future.
+        {
+          "We take our responsibility to the planet seriously. From supporting eco-conscious farming practices to minimizing our environmental footprint, sustainability is woven into the fabric of our brand. With every cup, you can sip knowing you're part of a movement towards a greener future."
+        }
       </p>
       <p className={styles.pmob + " " + david.className}>
-        We take our responsibility to the planet seriously. With every cup, you
-        can sip knowing you're part of a movement towards a greener future.
+        {
+          "We take our responsibility to the planet seriously. With every cup, you can sip knowing you're part of a movement towards a greener future."
+        }
       </p>
       <PaperCup className={styles.papercup} />
       <svg
