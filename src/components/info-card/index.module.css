@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 26px 36px;
+  background-color: white;
 }
 .card > span {
   font-size: var(--heading3);
