@@ -15,8 +15,9 @@
   margin-bottom: 75px;
 }
 .title > p {
+  max-width: 1000px;
   margin: 0px;
-  width: 1000px;
+  width: 100%;
 }
 .p1 {
   color: var(--dark-brown);
@@ -35,6 +36,7 @@
 }
 @media (max-width: 768px) {
   .title > p {
+    max-width: 400px;
     margin: 0px;
     width: 100%;
     font-size: 20px;

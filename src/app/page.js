@@ -7,7 +7,8 @@ import BubbleSection from "@/sections/bubble-section";
 import JourneySection from "@/sections/journey-section";
 import WhySection from "@/sections/why-section";
 import Experience from "@/sections/experience-section";
-import Review from "@/sections/review";
+import Review from "@/sections/review-section";
+import Link from "next/link";
 
 const david = David_Libre({
   subsets: ["latin"],
@@ -15,6 +16,31 @@ const david = David_Libre({
   display: "swap",
 });
 export default function Home() {
+  useEffect(() => {
+    // If there's a hash in the URL, remove it and reload the page from the top
+    if (window.location.hash) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+      window.scrollTo(0, 0);
+    }
+
+    // Scroll event listener to animate clouds
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const cloudLeft = document.querySelector("." + styles.cloudleft);
+      const cloudRight = document.querySelector("." + styles.cloudright);
+
+      const isMobile = window.innerWidth < 768;
+      const multiplier = isMobile ? 0.3 : 0.8;
+
+      if (cloudLeft && cloudRight) {
+        cloudLeft.style.transform = `translateX(-${scrollTop * multiplier}px)`;
+        cloudRight.style.transform = `translateX(${scrollTop * multiplier}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <br></br>
@@ -57,7 +83,7 @@ export default function Home() {
           </h1>
         </div>
         <div className={styles.arrowcontainer}>
-          <a className={styles.arrowlink} href="#journey">
+          <Link className={styles.arrowlink} href="#journey">
             {/* Arrow SVG start   */}
             <svg
               className={styles.arrows}
@@ -84,7 +110,7 @@ export default function Home() {
               </g>
             </svg>
             {/*Arrow SVG end */}
-          </a>
+          </Link>
         </div>
         <div className={styles.clouds}>
           <Image
@@ -104,7 +130,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.page}>
-        <section>
+        <section id="journey">
           <JourneySection></JourneySection>
           <hr className={styles.dashedline}></hr>
           <WhySection></WhySection>

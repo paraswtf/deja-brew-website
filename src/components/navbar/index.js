@@ -22,16 +22,16 @@ function NavBar() {
         </Link>
         <ul className={styles.navlinks}>
           <li>
-            <NavLink href="https://www.youtube.com/">Home</NavLink>
+            <NavLink href="https://web.whatsapp.com/">Home</NavLink>
           </li>
           <li>
-            <NavLink href="https://www.youtube.com/">About</NavLink>
+            <NavLink href="#">About</NavLink>
           </li>
           <li>
-            <NavLink href="https://www.youtube.com/">Menu</NavLink>
+            <NavLink href="#">Menu</NavLink>
           </li>
           <li>
-            <NavLink href="https://www.youtube.com/">Location</NavLink>
+            <NavLink href="#">Location</NavLink>
           </li>
         </ul>
         <div
@@ -46,16 +46,16 @@ function NavBar() {
 
       <ul className={joinIf(open, styles.navlinksvert, styles.active)}>
         <li className={joinIf(open, styles.li, styles.active)}>
-          <NavLink href="https://www.youtube.com/">Home</NavLink>
+          <NavLink href="https://web.whatsapp.com/">Home</NavLink>
         </li>
         <li className={joinIf(open, styles.li, styles.active)}>
-          <NavLink href="https://www.youtube.com/">About</NavLink>
+          <NavLink href="#">About</NavLink>
         </li>
         <li className={joinIf(open, styles.li, styles.active)}>
-          <NavLink href="https://www.youtube.com/">Menu</NavLink>
+          <NavLink href="#">Menu</NavLink>
         </li>
         <li className={joinIf(open, styles.li, styles.active)}>
-          <NavLink href="https://www.youtube.com/">Location</NavLink>
+          <NavLink href="#">Location</NavLink>
         </li>
         <hr className={joinIf(open, styles.hr, styles.active)}></hr>
       </ul>
