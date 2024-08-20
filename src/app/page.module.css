@@ -184,3 +184,7 @@
     width: 20vw;
   }
 }
+.cloudleft,
+.cloudright {
+  transition: transform 0.3s ease-out;
+}
