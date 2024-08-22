@@ -22,7 +22,7 @@ function NavBar() {
         </Link>
         <ul className={styles.navlinks}>
           <li>
-            <NavLink href="https://web.whatsapp.com/">Home</NavLink>
+            <NavLink href="#">Home</NavLink>
           </li>
           <li>
             <NavLink href="#">About</NavLink>
